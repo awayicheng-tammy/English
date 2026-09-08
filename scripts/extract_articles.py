@@ -188,6 +188,19 @@ def block_size_stats(dict_block):
     return max_size, large_chars
 
 
+def looks_like_dek(dict_block):
+    """A standfirst/dek is body-sized text, so it can't be told apart from a
+    real paragraph by size alone — but unlike body text (set Light, aside
+    from the odd raised-caps opening word) a dek block is set almost
+    entirely in the SemiBold weight."""
+    spans = block_spans(dict_block)
+    if not spans:
+        return False
+    bold_chars = sum(len(s["text"]) for s in spans if "SemiBold" in s["font"] or "Bold" in s["font"])
+    total_chars = sum(len(s["text"]) for s in spans)
+    return total_chars > 0 and bold_chars / total_chars >= 0.8
+
+
 def is_banner_block(dict_block):
     """A title / dek / section-label block. These often sit at an x0 that
     doesn't line up with any body column (headlines are frequently centred
@@ -319,6 +332,7 @@ def extract(pdf_path: Path):
     current_section = ""
     current = None
     pending_dropcap = ""
+    awaiting_dek = False
     articles = []
 
     for pno in range(doc.page_count):
@@ -395,6 +409,7 @@ def extract(pdf_path: Path):
                         break
                 current["title"] = title_text
                 current["dek"] = fix_glued_words(normalize(" ".join(dek_parts)))
+                awaiting_dek = not current["dek"]
                 continue
 
             if current is None:
@@ -408,6 +423,13 @@ def extract(pdf_path: Path):
                 if max_size >= TITLE_SIZE_MIN:
                     pending_dropcap += norm_clean
                 continue
+
+            if awaiting_dek and not current["paragraphs"] and looks_like_dek(db):
+                current["dek"] = fix_glued_words(norm_clean)
+                awaiting_dek = False
+                continue
+            awaiting_dek = False
+
             text = pending_dropcap + norm_clean
             pending_dropcap = ""
             ends_article = text.rstrip().endswith(END_MARK)
