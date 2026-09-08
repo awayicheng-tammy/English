@@ -88,11 +88,10 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
     {
       "section": "Leaders",
       "title": "Flirting with the next intifada",
-      "dek": "",
+      "dek": "America must press Binyamin Netanyahu to rein in violent Israeli settlers",
       "pageStart": 8,
       "pageEnd": 8,
       "paragraphs": [
-        "America must press Binyamin Netanyahu to rein in violent Israeli settlers",
         "FEW, IF ANY, security forces are as ruthlessly effective as Israel’s. Its military and intelligence services strike against enemies even at extreme distances. In the past couple of years alone Israel has assassinated dozens of opponents inside Iran, plus proxy militia leaders in Lebanon and Yemen. Israel’s martial capabilities earn respect even from its bitterest enemies.",
         "Yet this superiority seems to count for little closer to home. Those same forces are responsible for a dire failure in the occupied West Bank, where violent Israeli settlers have been attacking Palestinian residents with increasing brutality (see Middle East & Africa section). Settlers want to force Palestinians from their land and claim it for themselves.",
         "Israel’s failure in the West Bank can hardly be put down to a lack of resources. The Israel Defence Forces (IDF) deploy 25 combat battalions there. Shin Bet, the powerful security agency, has networks of agents and informers throughout. But these are used mostly to protect the 500,000 or so Israeli settlers, and against the threat of terrorist attacks, not to assist the more than 3m Palestinians who live in the territory. This has largely been the case since Israel replaced Jordan as occupier of the West Bank in 1967.",
@@ -109,11 +108,10 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
     {
       "section": "Leaders",
       "title": "Don’t ditch Palantir",
-      "dek": "",
+      "dek": "The shadowy tech firm has flaws. But its critics' arguments do not stack up",
       "pageStart": 8,
       "pageEnd": 9,
       "paragraphs": [
-        "The shadowy tech firm has flaws. But its critics' arguments do not stack up",
         "MAKING DATABASE-MANAGeMeNt seem transgressive is a feat. Palantir, a technology firm, has managed it by publishing manifestos bemoaning the West’s hollowed-out civic culture, by working with trigger-happy American border enforcers and Israeli soldiers, and by having a chairman who is fond of invoking the Antichrist. That the firm is named after J. R. R. Tolkien’s creepy all-seeing orbs may not have helped.",
         "Britain is spooked. It may boot Palantir out of the National Health Service (NHS), where the firm has a contract to manage medical data (see Britain section). Two parliamentary committees have recommended doing so. London’s mayor, Sir Sadiq",
         "Khan, has blocked its work with the Metropolitan Police. Palantir has probably over-sold its software’s impact. Its boasts (echoed by the NHS) of enabling 110,000 extra surgeries look exaggerated. By British standards, its lobbying is brash.",
@@ -134,11 +132,10 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
     {
       "section": "Leaders",
       "title": "The tragedy of Jason Arday",
-      "dek": "",
+      "dek": "His supporters—including Cambridge University—treated him as a symbol, not a man",
       "pageStart": 9,
       "pageEnd": 10,
       "paragraphs": [
-        "His supporters—including Cambridge University—treated him as a symbol, not a man",
         "ON AUGUST 14Th Jason Arday was found dead, apparently from suicide, at his home in London. For those who loved this 41-year-old Cambridge professor, it is a tragedy. For the world it is a warning of the destruction bad ideas can wreak.",
         "The bad idea here is that people should be judged not by their individual character and abilities, but by their race, disability or other politically charged attributes. Mr Arday became the University of Cambridge’s youngest-ever black professor in 2023, before being engulfed by a scandal over plagiarism and faked research. He bore responsibility for his own downfall. Yet just as troubling is the way both his supporters and detractors even now reduce him to a symbol.",
         "The most egregious is Cambridge, which used him to repair its reputation for being white and elitist (see Britain section). He did not deserve the glittering prize of a professorship there. His peers had for some time privately fretted that he lacked the credentials to support his public profile. Journalists at the Telegraph later found over 100 passages from his PhD thesis that had been copied, some with small changes, from someone else’s. Others uncovered evidence in his published",
@@ -225,11 +222,10 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
     {
       "section": "Briefing",
       "title": "The search for consciousness inside LLMs",
-      "dek": "",
+      "dek": "Scientists are trying to figure out whether algorithms could one day wake up and feel",
       "pageStart": 13,
       "pageEnd": 14,
       "paragraphs": [
-        "Scientists are trying to figure out whether algorithms could one day wake up and feel",
         "IN A RECENT experiment on Claude Sonnet 4.5, a large language model (LLM) from Anthropic, researchers asked it to count to five and, at the same time, “introspect deeply”. The artificial-intelligence model complied, returning: “One . Two . Three . Four . Five .” So far, so normal.",
         "During the task, the researchers were watching what was going on inside the LLM’s many layers of artificial neural networks. When a user asks a question, the words are turned into chunks of text (tokens) that are then converted to numbers. These are then passed through the layers of artificial neurons until they reach the final layer, which produces a token. Repeat that process a bunch of times each second and you get a series of tokens that turn into a sentence or some other more complex response. For a long time these layers have remained a black box, largely impenetrable to anyone wanting to know how or why LLMs do things in the way they do.",
         "Anthropic’s researchers were able to",
