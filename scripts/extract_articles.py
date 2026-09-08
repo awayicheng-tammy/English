@@ -23,6 +23,7 @@ import unicodedata
 from pathlib import Path
 
 import pymupdf
+from wordfreq import zipf_frequency
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 READER_DATA_DIR = REPO_ROOT / "reader" / "data"
@@ -105,15 +106,49 @@ def fix_glued_words(text: str) -> str:
     return text
 
 
+_WORD_TAIL_RE = re.compile(r"[A-Za-z]+$")
+_WORD_HEAD_RE = re.compile(r"^[a-z]+")
+
+# The fragment before the hyphen must itself read as a common, complete word
+# (rules out proper nouns and mid-syllable fragments like "de"/"con", which
+# only look frequent because they're common short substrings).
+REAL_WORD_ZIPF_MIN = 3.5
+# The no-hyphen joined form must be (close to) unknown, i.e. not a real
+# single English word on its own.
+JOINED_WORD_ZIPF_MAX = 0.5
+
+
+def _looks_like_real_compound(prefix_fragment, suffix_fragment):
+    """Decide whether a line-end hyphen is a genuine compound-word hyphen to
+    keep (e.g. 'year-' + 'olds' -> 'year-olds') rather than the far more
+    common case of a typesetting line-wrap break to remove (e.g. 'de-' +
+    'cade' -> 'decade'). See DEVELOPMENT.md for how these thresholds were
+    picked and their known false-positive rate."""
+    if prefix_fragment[:1].isupper() or len(prefix_fragment) < 3:
+        return False
+    if zipf_frequency(prefix_fragment.lower(), "en") < REAL_WORD_ZIPF_MIN:
+        return False
+    joined = (prefix_fragment + suffix_fragment).lower()
+    return zipf_frequency(joined, "en") < JOINED_WORD_ZIPF_MAX
+
+
 def dehyphenate_join(text: str) -> str:
-    """Join a block's raw text (with \\n at line wraps) into one paragraph,
-    removing line-wrap hyphenation like 'de-\\ncade' -> 'decade'."""
+    """Join a block's raw text (with \\n at line wraps) into one paragraph.
+    Most line-end hyphens are typesetting artifacts of narrow justified
+    columns ('de-\\ncade' -> 'decade') and should be removed, but a line can
+    also wrap right on a genuine compound-word hyphen ('year-\\nolds' should
+    stay 'year-olds', not become 'yearolds') — see _looks_like_real_compound()."""
     lines = [l for l in text.split("\n") if l.strip()]
     out = ""
     for line in lines:
         line = line.strip()
         if out.endswith("-") and out[-2:-1].isalpha() and line[:1].islower():
-            out = out[:-1] + line
+            prefix_m = _WORD_TAIL_RE.search(out[:-1])
+            suffix_m = _WORD_HEAD_RE.match(line)
+            if prefix_m and suffix_m and _looks_like_real_compound(prefix_m.group(), suffix_m.group()):
+                out = out + line  # keep the hyphen, just undo the line break
+            else:
+                out = out[:-1] + line
         elif out:
             out = out + " " + line
         else:

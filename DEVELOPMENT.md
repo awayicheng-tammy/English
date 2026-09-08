@@ -55,6 +55,8 @@ PDF 没有内嵌书签/大纲（`doc.get_toc()` 是空的），所以文章切�
 - **"Eating bitterness"、"Yielding" 两篇文章开头是从句子中间开始的**：真正的开头被错误地并入了前一篇文章的结尾。初步怀疑还是分栏/分块边界问题，但具体成因还没抓到，需要单独用类似前面几次的调试方法（打印该页所有文字块的 bbox/字号）去定位。
 - **少数"一页塞好几篇短文"的版式会把 2-3 篇短文章合并到一个标题下**：具体是 Britain 版"Back to the shires"(板球) 被合并进"Two toots for the planning overhaul"、Science & technology 版"Make it stick"被合并进"Should you stand at your desk?"、Culture 版"Vin-dinavia"被合并进"Get the picture?"。这些页面的版式是标题和对应正文的位置关系不满足"标题必然在其正文前面"这个基本假设（一个"盒装"小文章的标题印在页面下方而正文在别处），需要更复杂的空间分区逻辑才能解决，目前没有修。
 - **个别文章可能仍缺副标题**（如"Without a trace"）：说明 SemiBold 字重这个判定信号不是百分之百覆盖所有情况，具体原因还没细查。
+- **极少数复合词连字符判断仍会出错**（约 6 处/全书）：`switch-gears`、`liberal-isers`、`glue-ball`、`point-defence`、`weapons-engagement`、`with-drawfrom`，详见"修复六"。其中 `with-drawfrom` 本质是下面这条"缺空格"问题的连带表现。
+- **少数地方两个独立单词之间缺空格被粘在一起**（如 "parliamentary elections" 被提取成 "parliamentaryelections"）：这是 PDF 排版紧凑导致的老问题，`fix_glued_words()` 目前只覆盖了标点/引号/称谓后紧跟大写字母这几种可以安全判断的模式，普通单词间纯粹因为字距过紧缺空格、又没有标点做锚点的情况还没处理，也没有可靠信号能和"连字符复合词"问题区分开（修复六调试时发现的）。
 
 ## 变更记录
 
@@ -100,6 +102,19 @@ PDF 没有内嵌书签/大纲（`doc.get_toc()` 是空的），所以文章切�
 - **修复**：发现单独成块的副标题有一个可靠的区分特征——几乎全篇用 SemiBold（半粗体）字重，而正文是 Light 字重（除了偶尔开头几个字用大写强调）。加了一条规则：一篇文章标题后遇到的**第一个**正文级别大小的块，如果几乎全是 SemiBold，就当作副标题，不算进正文段落。
 - 有副标题的文章从 47 篇增加到 51 篇。
 - PR #5。
+
+### 2026-09-08 修复六：行尾连字符误删（"year-olds" 被拼成 "yearolds"）
+- **触发**：用户发现《Could AIs become conscious?》里 "18- to 29-year-olds" 被拼成了 "18- to 29-yearolds"。
+- **根因**：原文换行是 "18- to 29-year-\nolds"——这次换行恰好落在真正的复合词连字符上。`dehyphenate_join()` 原来的逻辑是"只要行尾是字母+连字符、下一行开头是小写字母，就无条件去掉连字符拼接"，这个假设对绝大多数"排版换行硬插的连字符"（如 "de-\ncade" → "decade"）是对的，但对恰好在连字符处换行的真复合词就会拼错。
+- **踩过的坑（原生词典频率法不够用）**：一开始尝试"把两段拼起来查词频，词频低就说明不是一个真词、应该保留连字符"这个最直接的思路。实测扫了全书约 1905 处行尾连字符，"拼起来查词频很低"的有 152 处——但逐条看下来发现里面绝大多数根本不是复合词判断问题：
+  - **约 40 处是人名/专有名词被换行截断**（如 "Cof-nas"→应该是"Cofnas"、"Jen-rick"→"Jenrick"、"Zelen-sky"→"Zelensky"），人名本来就是低频词，会被误判成"保留连字符"，反而把原来正确的结果改错。
+  - **约 15-20 处其实是另一个不相关的 bug**——两个独立单词因为 PDF 排版紧凑被粘在一起、中间缺空格（如 "parliamentary elections" 被提取成 "parliamentaryelections"），这跟连字符判断没关系，纯查词频只会得到误导性的低分。
+  - **还有一批是词典本身覆盖不全的真实单词**（尤其是英式 -isation/-ised 拼法，如 "denuclearisation"、"professionalised"、"monopolised"），词频虽不算高但确实是合法单词，会被误判成复合词。
+- **修复**：把判断逻辑收紧成三个信号同时满足才保留连字符：① 连字符前的那段文字本身**不能是大写开头**（排除人名）；② 连字符前的那段文字长度 ≥ 3 且**本身就是一个常见完整单词**（`zipf_frequency ≥ 3.5`，排除"de"、"con"这类音节碎片——这类碎片本身词频也不低，因为是常见的短字母组合，所以只在末尾单独判断这一步不够，见下）；③ 两段直接拼起来（不带连字符）后**几乎不构成一个真实单词**（`zipf_frequency < 0.5`）。三个条件同时满足才认为是真复合词、保留连字符，否则按老逻辑去掉连字符拼接。
+- 用这套组合规则重新扫描后，"保留连字符"的候选从 152 处收窄到 49 处，人工抽查大部分（"year-olds"、"state-built"、"long-serving"、"third-best"、"purpose-built"、"knock-on"、"hard-left"、"far-right"、"one-off"、"toll-free"、"mass-market"、"state-owned"、"second-largest"、"two-thirds" 等）都是真实需要连字符的复合词。
+- **仍然承认存在的残留误差**（抽查发现约 6 处，全书 320000+ 字符里占比很小）：`switch-gears`（应为一个词 switchgear）、`liberal-isers`（应为 liberalisers）、`glue-ball`（物理学术语应为 glueball）、`point-defence`、`weapons-engagement`（这两个作为名词短语通常不加连字符）、`with-drawfrom`（这条其实是前面提到的"缺空格"那个不相关 bug 导致的，本该是"withdraw from"两个词，无论加不加连字符都是错的）。这类误差本质上是"英文里到底该连字符还是该空格还是该合成一个词"这个问题在没有完整词典/NLP 工具的情况下很难 100% 判准，选择接受这个小比例的残留误差、换取"18- to 29-year-olds"这类高频真实场景被修好。
+- `requirements.txt` 新增 `wordfreq` 依赖（纯 Python、自带词频数据、不用联网）。
+- PR #7。
 
 ## 工作流约定
 
