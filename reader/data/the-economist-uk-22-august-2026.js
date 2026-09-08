@@ -87,6 +87,52 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
     },
     {
       "section": "Leaders",
+      "title": "Flirting with the next intifada",
+      "dek": "",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "paragraphs": [
+        "America must press Binyamin Netanyahu to rein in violent Israeli settlers",
+        "FEW, IF ANY, security forces are as ruthlessly effective as Israel’s. Its military and intelligence services strike against enemies even at extreme distances. In the past couple of years alone Israel has assassinated dozens of opponents inside Iran, plus proxy militia leaders in Lebanon and Yemen. Israel’s martial capabilities earn respect even from its bitterest enemies.",
+        "Yet this superiority seems to count for little closer to home. Those same forces are responsible for a dire failure in the occupied West Bank, where violent Israeli settlers have been attacking Palestinian residents with increasing brutality (see Middle East & Africa section). Settlers want to force Palestinians from their land and claim it for themselves.",
+        "Israel’s failure in the West Bank can hardly be put down to a lack of resources. The Israel Defence Forces (IDF) deploy 25 combat battalions there. Shin Bet, the powerful security agency, has networks of agents and informers throughout. But these are used mostly to protect the 500,000 or so Israeli settlers, and against the threat of terrorist attacks, not to assist the more than 3m Palestinians who live in the territory. This has largely been the case since Israel replaced Jordan as occupier of the West Bank in 1967.",
+        "What has changed is the behaviour of many “outlaw” settlers. Never before have they acted as violently as today. Crucially, never before have they enjoyed the impunity the current government gives them. Since the Hamas attack in October 2023, which triggered the war in Gaza, over 1,100 Palestinians have been killed in the West Bank. Only rarely does the IDF intervene against settlers. In Qusra, for example, an entire battalion was recently deployed against those who were invading Palestinian homes. But the soldiers found themselves fruitlessly chasing youngsters over the hills. Troops from another unit joined the settlers in prayers. No arrests were made.",
+        "The ineffectual response can be explained by the stance of",
+        "Israel’s government. The IDF knows that Binyamin Netanyahu, the prime minister, sides squarely with the most extreme settlers. It appears that the IDF was dispatched to Qusra only after American diplomatic pressure which arose because an American citizen owns a home there.",
+        "Mr Netanyahu has appointed radical settlers, who support ethnic cleansing, to key cabinet positions. In the rare cases when the IDF has sought to rein in violent settlers, the defence minister, Israel Katz, has berated his generals. The government has authorised around 200 settler outposts in less than four years. This just whets the settlers’ appetite for more.",
+        "In the months leading up to Israel’s election on October 27th the situation could get even worse. The settlers will probably attempt more land grabs, fearing the vote may lead to a new government that will curb their aggression. Meanwhile, for Israel’s longserving prime minister, an alliance with the far right has become the key to remaining in office. Mr Netanyahu will keep enabling the settlers unless he is forced to back down.",
+        "As Palestinians come to believe they face inevitable eviction, the danger is of conflagration in the West Bank or even another intifada. Such an uprising would be a disaster for Israelis and Palestinians alike. Yet Mr Netanyahu seems willing to take the risk, if it helps his chances of political survival.",
+        "That would fit a pattern. Mr Netanyahu has rejected the latest agreement brokered by America for the disarmament of Hamas and an Israeli withdrawal from Gaza, lest it anger the far right. He has continued to order air strikes in Lebanon and Syria, despite the chance to agree on more secure borders. Behind in the polls, he is doubling down on empty promises to vanquish Israel’s enemies. Only pressure from Donald Trump might get him to ease off. This Israeli government may be in its final months. Its potential to cause damage remains."
+      ],
+      "id": "003-flirting-with-the-next-intifada"
+    },
+    {
+      "section": "Leaders",
+      "title": "Don’t ditch Palantir",
+      "dek": "",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "paragraphs": [
+        "The shadowy tech firm has flaws. But its critics' arguments do not stack up",
+        "MAKING DATABASE-MANAGeMeNt seem transgressive is a feat. Palantir, a technology firm, has managed it by publishing manifestos bemoaning the West’s hollowed-out civic culture, by working with trigger-happy American border enforcers and Israeli soldiers, and by having a chairman who is fond of invoking the Antichrist. That the firm is named after J. R. R. Tolkien’s creepy all-seeing orbs may not have helped.",
+        "Britain is spooked. It may boot Palantir out of the National Health Service (NHS), where the firm has a contract to manage medical data (see Britain section). Two parliamentary committees have recommended doing so. London’s mayor, Sir Sadiq",
+        "Khan, has blocked its work with the Metropolitan Police. Palantir has probably over-sold its software’s impact. Its boasts (echoed by the NHS) of enabling 110,000 extra surgeries look exaggerated. By British standards, its lobbying is brash.",
+        "Still, ditching Palantir would be a mistake. Sir Mark Rowley, head of the Met, says that, without Palantir’s time-saving software, hundreds of officers will be pulled from front-line policing. It seems to be doing a better job of digitising the NHS than the government’s latest effort, which devolved into a costly mess. If the firm’s public-sector clients deem its contributions valuable, that is a reason to keep it. Losing its technology",
+        "could further maul Britain’s mangled state capacity.",
+        "One set of criticisms concerns Palantir’s business model. The conspiratorially minded fret that the firm could steal and sell British data. More sober types worry about “lock-in”, where Palantir burrows deep into the state, ensconces itself, then overcharges for its services.",
+        "These fears stem from a misunderstanding of what Palantir does. It licenses software and sends consultants (“forward-deployed engineers”) to handle data. But those data remain firmly in the hands of the clients. Lock-in is a worry—and also something all vendors desire. It is up to buyers to ensure that contracts are fair. And if Palantir does become indispensable, that would mean its software is keeping hospital beds free and criminals jailed.",
+        "More misguided objections concern Palantir’s politics. Parliament’s science, innovation and technology committee cited a “mismatch with UK values” as a reason to cut ties. It warned of Palantir’s involvement in the American government’s “highly controversial policies and activities” and criticism by its chairman, Peter Thiel, of “the concept of a national health service”.",
+        "Everyone is entitled to their views on state-run health care or Donald Trump’s mass deportations (The Economist has plenty). Still, working with the elected government of a British ally or having a chairman with thoughts on health policy should not disqualify a contractor. A government awarding business on the basis of politics is illiberal. It also sounds a lot like the MAGA tactics of punishing individuals and institutions, such as law firms, asset managers or universities, for annoying Mr Trump. This is precisely the sort of thing many of Palantir’s British critics deplore.",
+        "The last set of worries has to do with technological sover-",
+        "eignty. Plenty of governments are reliant on American tech and under Mr Trump, America has become a less reliable partner (see Business section). In June it briefly ordered Anthropic to stop letting foreigners use its latest artificial-intelligence models. European politicians point out that some advanced weapons they get from America, such as F-35 fighter jets, have “kill switches” that could disable them remotely (which America has denied) or risk losing technical support from their makers on a presidential whim. One German state has replaced Microsoft Teams with a domestic video-call app.",
+        "In a world of geopolitical fracture, governments may sometimes want homegrown alternatives to foreign technology.",
+        "The best way to nurture these is to give domestic incumbents and startups an incentive to innovate. Cosseting local firms by blocking foreign competition has the opposite effect. In any case, no British firm can match Palantir’s offering. As for the Anthropic incident, that was more the administration’s bungled response to a legitimate worry about powerful AI hacking-tools getting into the wrong hands than an attempt to weaponise other countries’ reliance on American tech. Were the White House to attempt such weaponisation, Palantir and its fellow American tech giants would resist it, given the sizeable share of revenues they derive from Europe, including Britain.",
+        "To see far off, and to converse in thought In Tolkien’s books, the truth offered by palantirs is seldom straightforward. Repeatedly, those peering into them misinterpret out-of-context information and make dire, self-destructive choices. The British critics of Palantir, the company, risk falling into the same trap."
+      ],
+      "id": "004-don-t-ditch-palantir"
+    },
+    {
+      "section": "Leaders",
       "title": "The tragedy of Jason Arday",
       "dek": "",
       "pageStart": 9,
@@ -106,7 +152,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "And just as Mr Arday’s supporters dehumanised him during his rise, so his detractors rushed to use him as he fell. His case has delighted those who argue that all efforts to diversify institutions like Cambridge are wrong. The irony is that doubt may now fall unjustly on other academics from minority groups—precisely those whom activists supporting people such as Mr Arday say they want to help.",
         "The content of their character The fervour for DEI had already begun to pass by the time of Mr Arday’s appointment. Since his death, pundits have debated what, exactly, he was a symbol of: peak woke, or the rise of digital lynch mobs? He should be remembered as neither, but as a human being. And the institutions that failed him should try harder to look at people as individuals, with their own virtues and flaws, rather than as emblems of anything."
       ],
-      "id": "003-the-tragedy-of-jason-arday"
+      "id": "005-the-tragedy-of-jason-arday"
     },
     {
       "section": "Leaders",
@@ -127,7 +173,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "The difficulties are made yet worse when the contrail being assessed is a purely notional one—as would be the case for the contrails avoided by changing flight paths. Valuing counterfactuals is always hard.",
         "If contrail-avoidance turns out to be as useful as it looks, it would be much simpler to simply have air-traffic controllers assign routes that limit persistent contrails when it is possible and safe to do so. If some airlines choose to avoid the affected routes, others will surely be happy to take their place. And if such a scheme were also to show the benefits of innovations in air-traffic control (quite a few have been suggested) the industry would end up better off, as well as less polluting."
       ],
-      "id": "004-without-a-trace"
+      "id": "006-without-a-trace"
     },
     {
       "section": "Letters",
@@ -153,7 +199,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Opera critic “The otherWagnergroup” (August 8th) assessed 150 years of the “Ring” cycle. It omitted the definitive assessment, attributed to Bill Nye, a 19thcenturyhumourist: “Wagner’s music is betterthan it sounds.” CARROLLDORgAn Saint-Germain-en-Laye, France",
         "→Letters should be addressed to the Editor at: The Economist, The Adelphi Building, 1-11 John Adam Street, London WC2N; Email: letters@economist. com. More letters available at: economist. com/letters"
       ],
-      "id": "005-ai-and-the-state-ai-and-hollywood-oil-pipelines-restaurants-postcards-richard-wagner"
+      "id": "007-ai-and-the-state-ai-and-hollywood-oil-pipelines-restaurants-postcards-richard-wagner"
     },
     {
       "section": "By Invitation",
@@ -174,7 +220,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Models of models of models of... It is remarkable—a kind of “strange loop”, reminiscent of Baron Munchausen lifting himself up by his own hair—that a physical system can exist in our world capable of forming models not only of that world, but of itself, and of its own models, and of others, and of their models, and of their models of its models, and so on. Yet human beings are precisely such systems. LLMs, too, model their interlocutors, and they model themselves modelling them. Whether that amounts to what we do is exactly the question in dispute—but they would be far less effective as chat partners if they did nothing of the kind.",
         "Indeed, in our research at Google, we have found that effective co-operation among intelligent agents requires that they have minds that model minds, both others’ and their own. Not only is consciousness relational; it is crucial to the mutual care and cooperation that enable intelligent beings to solve collective-action problems, understand each other’s needs and thrive together as a society. This does not mean pretending AI is human, with human needs and human rights; that would be a failure of imagination. It means evolving both our thinking and our society to include a wider variety of minds."
       ],
-      "id": "006-blaise-ag-era-y-arcas"
+      "id": "008-blaise-ag-era-y-arcas"
     },
     {
       "section": "Briefing",
@@ -202,7 +248,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "philosopher at the Massachusetts Institute of Technology (MIT), made an influential, if contested, contribution to the field by positing two types of consciousness. “Phenomenal” consciousness is the feeling of an experience—the blueness of a blue sky, the bitter tang of an espresso or the sharp screech of nails across a blackboard. “Access” consciousness is what happens when information from the experience is made available to other parts of the brain for reflection, evaluation or making decisions.",
         "Anthropic said its J-space experiments"
       ],
-      "id": "007-the-search-for-consciousness-inside-llms"
+      "id": "009-the-search-for-consciousness-inside-llms"
     },
     {
       "section": "Briefing",
@@ -257,9 +303,8 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Waking up",
         "How the Digital Consciousness Model (DCM) estimates the probability of LLMs being conscious",
         "Baseline assumption",
-        "LLMs assessed against ten theories of consciousness",
         "Performance of LLMs",
-        "→ →",
+        "LLMs assessed against → → ten theories of consciousness",
         "over time",
         "100% chance",
         "100% chance",
@@ -277,7 +322,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "1 The DCM starts with the assumption of a 20%",
         "“What if somewhere along the way, without realising it, we somehow introduced consciousness into these systems?” Dr Chalmers says. Ausermight thus generate dozens of AI agents through their latest project without realising that they were creating conscious beings who were capable of suffering. “That could be a moral catastrophe,” he says. “That’s provided an extra urgency to these questions.”"
       ],
-      "id": "008-putting-brain-cells-on-silicon"
+      "id": "010-putting-brain-cells-on-silicon"
     },
     {
       "section": "Britain",
@@ -295,11 +340,11 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "20 Cricket’s summer surprise",
         "20 Two toots for the planning overhaul",
         "21 Reform UK’s reformer",
-        "22 Bagehot: The Great British Bunk Off ⏩",
+        "section), risking a reaction that could de- 22 Bagehot: The Great British Bunk Off prive Britain of useful software. ⏩",
         "processes were circumvented.",
         "Its loudest critics focus on how Palantir’s tech has helped President Donald Trump’s administration track and deport migrants, and the Israel Defence Forces target Gazans. In a speech on July 30th Robert Jenrick, an MP for Reform UK, a populist right-wing party, claimed that Palantir “reduced discharge delays by 15%”, but that Mr Burnham was considering scrapping it from the NHS because “British Islamists were unhappy”.",
         "Critics also point to the firm’s lobbying: its first British government contract, matching patients to ventilators, came during the covid-19 pandemic for a token fee of £1 ($1.30), after it charmed civil servants over watermelon cocktails. Zack Polanski, the Green Party leader, unfairly notes that Louis Mosley, who runs Palantir’s British arm and its European headquarters, is a grandson of Oswald Mosley, a 1930s fascist leader, and “insists on wearing a black shirt every single time he is on TV”.",
-        "“Palantir derangement syndrome”, as the Spectator magazine put it in a recent cover story, is not the only explanation for the backlash against the firm. It has sometimes overstated what its software can do. And it is a lightning rod for a broader anxiety about tech sovereignty (see Business section), risking a reaction that could deprive Britain of useful software.",
+        "“Palantir derangement syndrome”, as the Spectator magazine put it in a recent cover story, is not the only explanation for the backlash against the firm. It has sometimes overstated what its software can do. And it is a lightning rod for a broader anxiety about tech sovereignty (see Business",
         "▸ No one disagrees that a key problem for the British state is its fragmented data. Police spend most of their time on admin rather than investigating crimes, accessing dozens of systems, each with its own login details. Disjointed data cost lives. A recent official report on England’s maternity care found that patients routinely get lost between services because of poorly integrated tech, and that staff have to write on scraps of paper during emergencies.",
         "Palantir can help solve such problems. Its engineers take vast quantities of scattered data and join them into a single source of truth that non-tech-savvy staff can interact with. The armed forces, for example, are using Palantir’s software to work out which plane is nearest to which target and how much ammunition it has, and to assess military readiness down to the individual nut, bolt and screw.",
         "In Bedfordshire the firm’s software helped police review 62% more child-protection incidents over an eight-day trial period, and convict a Romanian criminal gang by trawling through around 100,000 messages—something that would previously have taken months. Responding to Sir Sadiq’s decision to block the Metropolitan Police contract, Sir Mark Rowley, the Met’s commissioner, said the lost productivity will mean the force must cut hundreds of front-line staff.",
@@ -313,8 +358,8 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Similar marketing hype surfaces in defence. Sir Tom Copinger-Symes, a recently retired lieutenant general, says that Palantir is “world-leading” at turning a complex military mission into actionable data flows. His concern is the way its marketing can present the firm as a “full-solution AI company rather than one supplier in a much broader supply chain”. The government has sometimes encouraged the same impression. A “strategic partnership” with the Ministry of Defence announced last September is less sweeping than it sounds: “a complete fantasy”, says one former official, pushed by government advisers who",
         "America first",
         "Palantir, revenue, $bn",
-        "Rest of world United States Britain",
-        "25 24 2023",
+        "Britain United States Rest of world",
+        "2023 24 25",
         "thought it would “look good”.",
         "Such salesmanship, abetted by government, has helped thrust Palantir into the centre of a panic about “tech sovereignty”, the loosely defined but real sense that Britain lacks control over critical technology at a time when America is no longer such a predictable and dependable ally. On this front, though, many of the concerns directed specifically at Palantir are misguided.",
         "The NHS recently apologised after failing to disclose that some Palantir staff would be able to see identifiable patient data, adding to fears about the 2018 Cloud Act, which gives the American government the power to request data from tech companies even when the data are hosted by foreign subsidiaries. In practice, there seems little chance that Palantir could be compelled to disclose such data: the information stays within the trust, which remains the data controller. Engineers lack the legal permission or access to browse patient data for secondary purposes.",
@@ -322,7 +367,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "More broadly, controversy around Palantir is a distraction from an uncomfortable truth: there are few good British or other European alternatives to the top American tech companies. The state can do some things itself. Last year the housing ministry replaced a Palantir refugeematching system with its own, saving “millions of pounds” in running costs. In June France said ChapsVision, a domestic AI firm, would take over the contract with DGSI, the country’s internal-security agency—but not before 2028. For other things, it needs American suppliers.",
         "If Britain exercises a break clause for the FDP, as a select committee of MPs has recommended, it will be nigh-on impossible to find a consortium to replace Palantir before next February. “All the other companies are miles behind,” says Mr Bartlett. On the battlefield, inferior tech could get British soldiers killed, argues Sir Tom. Colleagues, in love with American tech, should be careful not to buy its “full stack”, he suggests. But “would we buy the thirdbest tank just because it’s British?”"
       ],
-      "id": "009-why-everybody-hates-palantir"
+      "id": "011-why-everybody-hates-palantir"
     },
     {
       "section": "Britain",
@@ -340,19 +385,19 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "From blog to broadsheet",
         "Articles about Jason Arday’s alleged misconduct* Selected websites",
         "Unaffiliated blogs",
-        "Aug 14th Arday dies Aug 7th Arday resigns",
+        "Aug 7th Aug 14th Arday resigns Arday dies",
         "Nathan Cofnas accuses Arday of plagiarism",
         "Replicates Cofnas's analysis",
         "Telegraph",
         "Refers to Cofnas's blog",
         "Daily Mail",
         "Guardian",
-        "August July 2026",
+        "July 2026 August",
         "In a quiet month, national newspapers and social media piled in (see chart). The release in America of Mr Arday’s memoir, the aptly named “Great and Unfortunate Things” (and the leaking of an at times contradictory book proposal), raised more eyebrows. He claimed he had spent months in a coma with locked-in syndrome, had testicular cancer, two brain tumours, and epilepsy after being beaten by teenage thugs. The book also included a moment of prescience. After sending his application to Cambridge, Mr Arday wonders if he has “completely overestimated” his capabilities. “What if”, he writes, “my story ends up being a cautionary tale like Icarus about flying too close to the sun?”",
         "Cambridge faces many questions. “All of this could’ve been avoided if Cambridge did its due diligence, a basic background check,” says Clive Aruede of the Association of Black Humanists. The university told The Economist it continued to provide support after Mr Arday resigned, screening his emails and posts for racist messages, and providing counselling. Many will wonder if it did enough for the man it placed on a pedestal once he fell off it.",
         "Myths and the man The myths about Mr Arday are already being written. Both sides of the culture war portray him as a black victim. A totem for a cult of wokeness in an academy which prioritised diversity over merit; a hero hounded to death by a racist press. The likelier story is both duller and more depressing: an institution wanted a symbol badly enough not to look too closely, and a vulnerable man supplied one."
       ],
-      "id": "010-the-rise-and-fall-of-a-diversity-hire"
+      "id": "012-the-rise-and-fall-of-a-diversity-hire"
     },
     {
       "section": "Britain",
@@ -371,7 +416,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Taking cricket to the shires is an old tradition that had withered. Across England and Wales 51 outgrounds hosted (longerform) County Championship games in 1965, but just nine did so in 2018, as schedules shrank and the demands of professional cricket grew. Many outgrounds lack modern facilities. Lancashire have responded with AO Farington, a purposebuilt, 5,000-capacity second home which opened this summer.",
         "For players, the One-Day Cup can be a stepping stone to The Hundred and riches beyond. For a lucky few, the road to winter suntans in Dubai and Durban could pass through Gosforth and Grantham. On August 11th Rocky Flintoff, the 18-year-old son of a former England star, Andrew “Freddie” Flintoff, smashed a 65-ball century for Lancashire against Somerset. He will surely be upgraded to The Hundred next year, and from there, who knows. But county fans aren’t chasing a glittering future, just a sunny afternoon in a cosy ground watching cricket as they know it."
       ],
-      "id": "011-two-toots-for-the-planning-overhaul"
+      "id": "013-two-toots-for-the-planning-overhaul"
     },
     {
       "section": "Britain",
@@ -391,7 +436,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Mr Jenrick’s impact on his new party goes only so far, however. He is not popular with voters, says Luke Tryl of More in Common, a pollster; even Reform supporters rate him below other senior figures. The party refuses to take on some of Britain’s thorniest problems, such as the need to curb spending on pensioner benefits and challenge NIMBYs who block the building of new homes in the countryside.",
         "And while the party may be getting more sensible on some areas, it still looks shambolic. Mr Farage spent the summer fighting an unnecessary by-election to win back the seat he resigned in a fit of pique over claims (which he denies) that he has been evasive about his finances. Reform’s handful of well-known personalities can rarely resist taking rhetorical potshots at each other in public: this week Tim Montgomerie, a conservative commentator, was suspended from the party after falling out with colleagues. Just one in six voters say they believe it is the party best placed to run Britain’s economy. Mr Jenrick’s “project professional” has a long way to go."
       ],
-      "id": "012-reform-uk-tries-to-get-serious"
+      "id": "014-reform-uk-tries-to-get-serious"
     },
     {
       "section": "Britain",
@@ -415,14 +460,14 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "We’re not all going on a summer holiday The Great British Bunk Off could be a solution rather than a scandal. Skiving is perhaps a necessary pressure valve for the labour market, allowing it to clear. If workers actually worked the hours, would companies be happy to offer a pay rise (plus a little extra for child care)? The Great British Bunk Off becomes a Soviet compromise: “We pretend to work, and they pretend to pay us.”",
         "Joining the rest of Europe and embracing an actual shutdown would be a gamble, a bet that Parkinson’s law—the idea that “work expands so as to fill the time available for its completion”— is a fundamental rule of economics, rather than a joke. Telling people to knuckle down is no more appealing. One cabinet minister suggests that if Britain wants to survive, it should consider a six-day week, rather than a four-day one. It would be a brave politician to pitch it. And so the Great British Bunk Off will remain a summer fixture, best observed from a berth at the lido or horizontally in a park. Good luck finding a spot."
       ],
-      "id": "013-the-great-british-bunk-off"
+      "id": "015-the-great-british-bunk-off"
     },
     {
       "section": "Europe",
       "title": "Burning down the house",
       "dek": "Germany’s Brandmauer",
       "pageStart": 23,
-      "pageEnd": 25,
+      "pageEnd": 24,
       "paragraphs": [
         "BITTERFELD How the anti-AfD firewall broke German politics",
         "IT IS AS unusual in Germany as anywhere to see conservatives cavort with Marxists. But at a demonstration in Bitterfeld, a town in the eastern state of Saxony-Anhalt, flags bearing the names of almost all Germany’s parties flutter in the evening breeze, from the centre-right Christian Democrats (CDU) to the Greens and Social Democrats (SPD), all the way to the hardleft Die Linke. The Bunt statt braun (colourful instead of brown) demos began last year to counter rallies organised by the farright Alternative for Germany (AfD). For many in Bitterfeld’s town square, the prospect of the AfD in power is a horrifying reminder of their country’s darkest period.",
@@ -433,10 +478,10 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "25 Ukraine without interceptors",
         "26 The feisty Mr Fedorov",
         "26 Western dance in France",
-        "27 Charlemagne: Swedish paradox ⏩",
+        "of the CDU in the city-state of Bremen. 27 Charlemagne: Swedish paradox ⏩",
         "ruling party and traditionally its largest. It formalised the policy in 2018 with an “incompatibility resolution” banning coalitions with both the AfD and Die Linke.",
         "As the AfD has grown, the Brandmauer has become something like an organising principle of public life. Legislative measures that could win majorities are stymied because AfD votes cannot be allowed to tip the scale. Its MPs are excluded from Bundestag vice-presidencies, and even from its football team. “They don’t greet you, they don’t shake your hand, you are a non-person,” sighs Gerold Otten, an AfD MP, of his colleagues in left-of-centre parties. The Brandmauer extends beyond politics. Business groups have retracted invitations to AfD MPs after furious backlashes. Diplomats hesitate to meet the party. Some media outlets tie themselves in knots over whether to interview its officials.",
-        "Has the policy worked? For some, keeping the AfD out of power is justification enough. It is among the nastier of Europe’s populist outfits, many of which shun its company. It flirts with racism and Nazi imagery, has sympathy for Vladimir Putin and harbours extremists in its ranks. “We don’t exclude the AfD because of the 2018 resolution, but because we don’t share any values with it,” says Wiebke Winter, head of the CDU in the city-state of Bremen.",
+        "Has the policy worked? For some, keeping the AfD out of power is justification enough. It is among the nastier of Europe’s populist outfits, many of which shun its company. It flirts with racism and Nazi imagery, has sympathy for Vladimir Putin and harbours extremists in its ranks. “We don’t exclude the AfD because of the 2018 resolution, but because we don’t share any values with it,” says Wiebke Winter, head",
         "Yet the Brandmauer has failed to arrest",
         "▸the AfD’s rise. In 2018 Friedrich Merz, now",
         "the CDU leader and Germany’s chancellor, vowed to halve its vote. He hoped tacking right on immigration and governing well could win back voters seduced by the AfD’s narrative of decline. That has not worked. Irregular immigration has plummeted, but the AfD has simply moved farther right, raging against “culturally foreign” workers and urging “remigration” (a slippery term that can mean anything from deporting asylum-seekers to ethnic cleansing). The CDU is nudging record lows in polls, while the AfD enjoys a clear lead (see chart).",
@@ -469,15 +514,9 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "CDU/CSU",
         "AfD",
         "SPD",
-        "The Brandmauer looks intact for now. One former CDU minister says 90% of senior party figures want to stick with it. But Mr Stecker’s gloomier view tempts others. “It’s too late for the CDU to turn around, and too late for the AfD to accept any turnaround,” he says. “Some things will tumble down, new things will emerge—and we don’t know what it will all look like.” ■ *DUMMY DATA",
-        "The Greens",
-        "FDP Others Die Linke",
-        "26 23 21 19 17 15 2013",
-        "cruise missiles sank a Turkish-owned cargo ship as it left Chornomorsk, one of three big ports in the region. Since then every vessel entering or leaving has been targeted. A few ships still dare to make the run, but the ports are commercially dead.",
-        "The timing could hardly be worse, with 50m tonnes of harvest still to move. “One ship of 100,000 tonnes is equivalent to 5,000 trucks, 5,000 drivers, and 5,000 border procedures,” says Dmytro Barinov, president of the Ukrport association. The situation is worse than in 2022, he says, when ports on the Danube offset some losses. Now the river’s low water level and Russian attacks make that route harder.",
-        "On the front lines things are grim for both sides. In parts of eastern Ukraine, Russia is crawling forwards but losing more than 1,000 men a day—a rate its recruitment struggles to replace. Elsewhere, Ukraine inches ahead in local counter-attacks. The focus of the war has thus largely shifted to the aerial campaigns. Ukraine mostly uses drones against Russian military targets, refineries and the arteries supplying Russian troops. Russia is using more destructive ballistic missiles against Ukraine’s defence industry, civilian logistics and energy networks."
+        "The Brandmauer looks intact for now. One former CDU minister says 90% of senior party figures want to stick with it. But Mr Stecker’s gloomier view tempts others. “It’s too late for the CDU to turn around, and too late for the AfD to accept any turnaround,” he says. “Some things will tumble down, new things will emerge—and we *DUMMY DATA don’t know what it will all look like.”"
       ],
-      "id": "014-burning-down-the-house"
+      "id": "016-burning-down-the-house"
     },
     {
       "section": "Europe",
@@ -498,7 +537,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Most worrying for Ukraine is Russia’s blockade. Dragon Capital, a Ukrainian investment firm, estimates it will cost the country 0.6% of GDP this year. If the harvest can’t be sold, farmers are likely to skip the winter sowing season, says Alex Lisitsa, president of the Ukrainian Agribusiness Club. That could push losses in agriculture to some $10-12 billion, he says, around 5% of GDP. Food security may be at risk in Ukraine’s markets in Africa and the Middle East. “It’s as if we played open football with the Brazilians,” rues one former senior official. “We scored three and are celebrating, but they scored 13.”",
         "Beware General Winter This year, Ukraine has defied the odds and regained battlefield momentum. Its progress was always likely to slow by winter, but the pressure has arrived earlier. Unless it gets ballistic interceptors, its economy and military prospects will take a heavy hit. The worst-case scenario whispered in Kyiv is that Russian strikes on energy and water systems force mass emigration. Mr Krymsky says a business colleague described his company’s strategy meeting last week, entitled Autumn Actions. “Today it already has a new name: Survive till April.”"
       ],
-      "id": "015-survive-till-april"
+      "id": "017-survive-till-april"
     },
     {
       "section": "Europe",
@@ -513,7 +552,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "rassing. It also suggests his ability to rein them in, angered as they are by his earlier efforts to shut them down, is shrinking. Previous anti-corruption investigations have cost him key aides and a substantial share of his popular support. Yet polling shows Ukrainians remain overwhelmingly opposed to elections during wartime.",
         "Even among Mr Fedorov’s supporters, reaction to his proposal is mixed. To some it looks impulsive. It could force Ukrainian politics into a treacherous situation, ahead of a winter in which Russia is expected to launch a drone and missile campaign of unprecedented ferocity. “If there’s a plan, it’s a bad one,” says an MP who is usually on Mr Fedorov’s side. Still, the intervention has put the question of elections back into public discussion. At the moment, Ukrainians do not want them. But bombardment and political chaos might change that."
       ],
-      "id": "016-not-now-mykhailo"
+      "id": "018-not-now-mykhailo"
     },
     {
       "section": "Europe",
@@ -533,7 +572,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Overall, nearly a quarter of the French say they are “attracted” to the culture of America’s West. “La danse country,” the authors write, “is totally unknown to elite France and when it is referred to it is mostly in a sarcastic way.” Populist politicians, including Marine Le Pen, the leading presidential candidate at next spring’s election, tend to be better tuned in. She has even been spotted in a Stetson, and periodically sings along at rural events.",
         "Some longtime French devotees will know “Le Madison” from a scene in Jean- Luc Godard’s 1964 film “Bande à Part”. More recently, it is the success of modern country-pop that has drawn new recruits. French line-dancing tutorials on YouTube are set to Taylor Swift songs. One on how to dance “Le Madison” has over 1m views. Away from parquet-floored Paris, at outdoor summer bals, the real ingredient for a successful event is when the secret thrill of an American cultural hit meets rural French tradition."
       ],
-      "id": "017-western-civilisation"
+      "id": "019-western-civilisation"
     },
     {
       "section": "Europe",
@@ -554,7 +593,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "The elusive Swedish model The historical development of a smallish European country may seem tangential to other Europeans, let alone Americans. Few polities can match the conditions that made Swedish collective individualism possible: seven centuries or so of rule of law, a deeply felt trust in the state, and a taste for consensus that can make the place feel stultifyingly conformist. Can Sweden itself maintain its unique path, now that a fifth of its population was born overseas?",
         "But cross-border surveys of social attitudes suggest most countries are growing more like Sweden and its neighbours: secular societies that put self-expression ahead of deference to family or tradition. That makes Sweden’s peculiar settlement, a form of overbearing statism that has helped people achieve freedom not just from economic want but from social pressures, more than a Nordic curiosity. To outsiders in America and beyond, big-state libertarianism can be puzzling. To Swedes there is no contradiction: they just want to be left alone, and to do it together."
       ],
-      "id": "018-individualism-together"
+      "id": "020-individualism-together"
     },
     {
       "section": "United States",
@@ -572,10 +611,10 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "31 Oklahoma’s civics lesson",
         "32 Republicans and the WNBA",
         "33 The frailty of Obamacare",
-        "34 Lexington: Re-examining covid-19 ⏩",
+        "mostly owned by local governments, serve 34 Lexington: Re-examining covid-19 fewer than 10,000 people each. That means ⏩",
         "Hacks can disrupt water supply and make water unsafe to drink, though none of the recent attacks is thought to have done so. The question is whether politicians will, at last, move to deter hackers before their next big onslaught. On August 13th Amy Klobuchar and Adam Schiff, a pair of Democratic senators, introduced the Water Cyber Shield Act, which includes more power for the Environmental Protection Agency (EPA). But on August 19th federal officials had already issued a new warning: hackers were trying to breach Siemens devices used in water facilities and other critical infrastructure.",
         "As the latest attack proves, water plants are not the only form of infrastructure under threat, but they are particularly easy to infiltrate. The electricity grid must meet cyber-security standards overseen by the Federal Energy Regulatory Commission. But no requirements exist for water. The electricity utilities that operate power plants are also larger, better funded and more tightly regulated than water operators: the biggest investor-owned utilities, such as PG&E in California and Duke Energy in the south-east and Midwest, supply power to millions of households.",
-        "Water—heavy and expensive to move— is more localised. About 90% of utilities, mostly owned by local governments, serve fewer than 10,000 people each. That means",
+        "Water—heavy and expensive to move— is more localised. About 90% of utilities,",
         "each has less money to harden their often obsolete computer systems. Indeed, water infrastructure had already shown itself illequipped to fend off attacks. Iranian hackers broke into the control systems of a small dam in New York in 2013, in an incident which went unreported for almost three years, and in 2023 seized a pump at a water plant in Pennsylvania.",
         "Iran’s hackers are prolific; on August 18th federal prosecutors charged 17 Iranians with attacking the systems of universities and companies to steal research and intellectual property. A sprawling Chinese campaign, known as Volt Typhoon, has sought to burrow into American critical infrastructure to prepare for sabotage.",
         "But those with less skill can break in, too. In 2019 a formerwater-district employee in Kansas used his old credentials to log on to an application that shut down cleaning procedures. (He claimed he was drunk which, if true, would offer further evidence that water is an easy target.) Two years later hackers took control of a water facility in Oldsmar, Florida, and attempted to poison residents by increasing the levels of sodium hydroxide, an ingredient in drain cleaner. That failed, but they were able to infiltrate the system easily, because an operator’s machine was running TeamViewer, a popular corporate tool that allows remote access to machines for IT support.",
@@ -585,7 +624,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Senate will take up in September, would increase the budget for the Department of War by 44%, to $1.5trn. That includes money for the Iran war and a high-tech “Golden Dome”, to shield America from missiles. He has shown less interest in defending American water.",
         "His budget would cut the EPA’s biggest source of funds for water cyber-security by almost 90%. In July he suggested that fault for Minnesota’s attack lay with Tim Walz, the “corrupt” governor of the state—and that there had not been an Iranian attack at all. “Iran’s got bigger problems than worrying about Minnesota,” he offered. The Cybersecurity and Infrastructure Security Agency, the main federal body tasked with cyber-defence, is in disarray, with leadership turmoil, low morale and a one-third cut in staff since Mr Trump returned to the White House. The Senate may push him to do more after it returns from recess. Hackers are not waiting."
       ],
-      "id": "019-a-vulnerability-ignored"
+      "id": "021-a-vulnerability-ignored"
     },
     {
       "section": "United States",
@@ -605,7 +644,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "whim, Democratic fundraising is decentralised. Individual candidates are outraising their opponents in competitive races. That means they have more cash on hand and more enthusiastic supporters, too.",
         "Not Contribute”. But many individual Democratic candidates are not suffering— donors are still giving money, but skirting the central committee and going straight to the campaigns."
       ],
-      "id": "020-the-republicans-money-problem"
+      "id": "022-the-republicans-money-problem"
     },
     {
       "section": "United States",
@@ -625,7 +664,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Democratic candidates hold an advantage in other states, too. In the nine most competitive Senate races, they had around $116m in cash on hand, compared with just $51m for Republicans. In a reflection of voters’ enthusiasm, on average small donors—individuals who pledge less than $200 to a campaign—accounted for 51% of donations to Democratic candidates, compared with 24% for Republicans.",
         "Republican party officials insist that Democratic candidates’ cash advantage is temporary, and that the money sitting in Republican coffers—including the president’s—will soon flow to campaigns. With the midterms less than three months away, candidates would be excused for feeling a little bit restless."
       ],
-      "id": "021-you-re-doin-fine-oklahoma"
+      "id": "023-you-re-doin-fine-oklahoma"
     },
     {
       "section": "United States",
@@ -642,7 +681,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Another prescription is the Oklahoma Standard itself. Other governors at the NGA conference expressed admiration for the state’s civic ethos. “What’s interesting about the Oklahoma Standard is it used to be the United States standard,” laments Spencer Cox, the Republican governor of Utah, who has long urged Americans to “disagree better”.",
         "Outside the memorial in Oklahoma City there is a fence where mourners place flowers and photos of loved ones. Every year Kyle Genzer leaves a letter for his mother, who died in the blast. “This year brought one of the most beautiful moments—the birth of your first great-granddaughter,” he writes. “Holding her, we couldn’t help but think of you.” Mr Genzer, a high-school principal, thinks it’s important to keep talking about the bombing, both to honour the victims and to remind the living that disagreement need not harden into hatred."
       ],
-      "id": "022-scoring-political-points"
+      "id": "024-scoring-political-points"
     },
     {
       "section": "United States",
@@ -660,7 +699,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Figures from insurers and state marketplaces show the effect of the rollback. The",
         "There will also be more people without insurance. Evidence suggests that they will put off needed treatment, like certain prescription medicines and surgeries. “We know that from a decade or more of research on the Affordable Care Act,” explains Mr Sommers. Hospitals must still provide emergency care for them, even if they cannot pay. In May unpaid care was up by an average of 16% compared with a year earlier, according to Kaufman Hall, a consultancy. HCA Healthcare, a for-profit hospital group, reckons the new uninsured population will cost the chain at least $1bn in operating profits this year, equivalent to about 15% of predicted net income. Enrolment on the exchanges in recent years shows “people generally want health insurance,” says Cynthia Cox of KFF. “It’s just a question of whether they can afford it.”"
       ],
-      "id": "023-in-poor-health"
+      "id": "025-in-poor-health"
     },
     {
       "section": "United States",
@@ -681,7 +720,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Dr Hooey The latest attack on Dr Fauci, concocted from his private texts disclosed by Republican senators on August 10th, is that he covered up a threat of miscarriage that the vaccine posed to pregnant women. In fact, the record shows Dr Fauci was consistent, publicly and privately, in counselling a weighing of risks and benefits until studies showed the vaccine was safe in pregnancy— which they have since done. His critics have not produced evidence the vaccine causes miscarriages.",
         "Dr Fauci made mistakes, including not disclosing early on that some top virologists initially worried the virus might be manmade. He could be arrogant. But he was not responsible for the worst excesses of the covid response. Those endless school shutdowns were the work of local officials and union leaders. Senator Paul’s release of Dr Fauci’s private diary has exposed his vanity, his delight in every gushing appraisal by the media or some celebrity. But the diary also reveals a conscientious public servant trying to save as many lives as he could, struggling against the constraints that hobbled America relative to its peers. His summons before the Senate committee was surely intended to humiliate if not incriminate him. It should embarrass the entire country."
       ],
-      "id": "024-the-doc-in-the-dock"
+      "id": "026-the-doc-in-the-dock"
     },
     {
       "section": "The Americas",
@@ -696,22 +735,22 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "The contest on October 4th will pit two radically different presidential candidates against each other: the incumbent, Luiz Inácio Lula da Silva, known as Lula, is an 80-year-old left-winger. His rival, Flávio Bolsonaro, is the 44-year-old son of a populist former president, Jair Bolsonaro, who is serving a 27-year sentence for plotting a coup after losing an election in 2022. All 513 seats in the lower house will also be renewed, as well as two-thirds of the Senate. Yet despite the polarised race, Brazil’s largest bloc, the Centrão (big centre), which accounts for 46% of seats in the outgoing Congress, has declared its neutrality. Party bigwigs will allow local politicians to support whichever candidate they choose.",
         "→ALSO in thiS SectiOn",
         "36 Argentina: polo superpower",
-        "37 Paraguay’s other language ⏩",
+        "States, France, Italy and Spain, only 37 Paraguay’s other language around 1% of discretionary spending in the ⏩",
         "In the past decade, as a succession of weak presidents ruled Brazil, Congress hijacked power from the executive. In 2016, amid a gigantic corruption probe which ensnared dozens of legislators, lawmakers impeached Dilma Rousseff, the left-wing president at the time, in part because they felt she was not doing enough to protect them from investigators. Ms Rousseff’s successor, Michel Temer, governed with little public support. Mr Bolsonaro, who ruled between 2019 and 2022, gave lawmakers ever-greater control of the federal budget in order to shield himself from impeachment attempts after his disastrous handling of the covid-19 pandemic. Today, Brazilian legislators control 25% of discretionary spending in the federal budget, up from 2% in 2015 (see chart on next page).",
-        "How to spend it Such power over the budget is highly unusual. Marcos Mendes of Insper, a university in São Paulo, and Hélio Tollini, a budget adviser to the lower house, have compared congressional amendments in 11 countries of the OECD, a club of mostly rich countries. In some, such as Canada and Australia, lawmakers have no right to amend the budget or apportion funds for themselves. In others, such as the United States, France, Italy and Spain, only around 1% of discretionary spending in the",
+        "How to spend it Such power over the budget is highly unusual. Marcos Mendes of Insper, a university in São Paulo, and Hélio Tollini, a budget adviser to the lower house, have compared congressional amendments in 11 countries of the OECD, a club of mostly rich countries. In some, such as Canada and Australia, lawmakers have no right to amend the budget or apportion funds for themselves. In others, such as the United",
         "budget is allocated to congressional amendments. In most of these states, lawmakers propose amendments to the budget, which are not always accepted.",
         "Not so in Brazil. There the budget must now always include a sum for congressional amendments. Congressmen often do not stipulate what they will use the money for. They have indexed the amount that the government must allocate to amendments to revenue growth, so that their grants inexorably grow. And they have all but scrapped rules around transparency and traceability in the use of funds.",
         "The proportion of money that Congress controls is not huge. Over 90% of Brazil’s budget of 6.5trn reais ($1.2trn) is spent on mandatory expenses, such as public salaries, pensions and financing the debt. Even as congressional control over the discretionary slice expands, the share of the budget that goes to mandatory spending is growing rapidly. In 2026 only 3.7% of the budget, or $46bn, was available. Of this, Congress controls $12bn.",
         "Easy access to money has boosted incumbents’ chances of re-election, as it allows lawmakers to fund glitzy projects that their constituents like. Their political allies in local government benefit, too. In 2024, when Brazilians elected over 5,500 mayors and tens of thousands of city councillors, a record 81% of incumbents who chose to run again held onto their jobs. In the upcoming general election, 87% of lower house members are standing for re-election, the highest share in Brazilian history.",
         "Holding the purse strings",
         "Brazil, federal discretionary spending controlled through congressional budget amendments, %",
-        "26* 24 22 20 18 2015",
+        "2015 18 20 22 24 26*",
         "Court released a sample of 100 so-called “Pix amendments”, where relatively small amounts of money are sent directly by a legislator to his local municipality. The grants in the sample totalled around $40m and had been sent to 75 recipients between 2020 and 2024. Irregularities were found in 82% of transfers, including money that moved through bank accounts that had nothing to do with the stipulated project for the grant, contracts with wildly inflated budgets, or funds destined for projects that were never completed. The accounts",
         "court estimated the loss to the public purse at $10m. The sample was small, but if it is representative, the losses are huge. Congress has approved 7bn reais of Pix amendments in the current budget, meaning some $340m may have been lost.",
         "In 2024 the Supreme Court forced legislators to identify the bank account that would receive federal funds, and to provide details on the projects the grants would be destined for. Yet legislators appear ready to put up a fight. Lawmakers have filed eight impeachment motions against Flávio Dino, the justice in charge of investigating legislators who make suspicious budgetary grants. (In Brazil the Supreme Court is in charge of criminal investigations into sitting politicians.)",
         "Indeed, lawmakers are gleefully throwing their weight around. Since 2021, senators have filed 105 impeachment petitions against Supreme Court judges (who have themselves become overmighty in recent years). The number of petitions may rise as new corruption investigations continue to ensnare legislators, including probes into fraud at the public-pension fund and the fallout from the biggest bank fraud in Brazil’s history. Brazil’s next president faces not only sluggish economic growth, high interest rates and a polarised electorate, but an overmighty Congress that will try to keep him weak and compliant."
       ],
-      "id": "025-imbalance"
+      "id": "027-imbalance"
     },
     {
       "section": "The Americas",
@@ -730,7 +769,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Like any fledgling industry, it helps to have the raw materials. Horses had long thrived on the Pampas, central Argentina’s vast grasslands. They attracted gauchos, the local version of cowboys. Polo, when it arrived, fit naturally with the abundance of cheap horses, skilled riders, flat land and agreeable weather. Argentine players were soon reckoned the world’s best, and remain so: 27 of the top 30 professionals today are from the country. They sustain a service-based economy in which rich foreigners hire them to help win trophies.",
         "Industry soon followed. Landed Argentine families have built formidable breeding programmes which pump out the world’s finest polo horses (or ponies, as they are known). And these products lead the field: of the 1,140 horses that competed for the Queen’s Cup in Britain last year, 1,000 were of Argentine bloodlines, according to the country’s polo association."
       ],
-      "id": "026-chukkanomics"
+      "id": "028-chukkanomics"
     },
     {
       "section": "The Americas",
@@ -746,7 +785,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Sustained growth has been the result. Two decades ago Juan Martín Batistuta, an equine vet, worked almost entirely on racehorses; today he works almost entirely on ponies. “I’ve never been busier,” he says. Nor is the boom confined to Buenos Aires. “From Córdoba to Patagonia, all over Argentina you have so many more clubs,” says Mr Fernández. The country now has 177. The sport’s profile is rising globally, too. A Netflix documentary released in 2024 and a broadcasting deal with ESPN have brought it to new audiences.",
         "The approval ratings of Javier Milei, Argentina’s president and a polo fan, are suffering as he attempts to reset the country’s economy. He might glance at proceedings in Pilar: a world-beating industry making the most of its competitive advantage, attracting foreign investment and adopting new technologies to bolster its position as the world’s leading exporter. An ideal remedy, perhaps, for a long face."
       ],
-      "id": "027-cool-talk"
+      "id": "029-cool-talk"
     },
     {
       "section": "Middle East & Africa",
@@ -763,11 +802,11 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "→ALSO in thiS SectiOn",
         "39 Consolidating power in Iran",
         "40 South Africa’s broke municipalities",
-        "41 Somaliland’s president has big plans ⏩",
+        "and media from visiting. “We are besieged, 41 Somaliland’s president has big plans the army is not allowing us to leave our ⏩",
         "rorising the families and forcing them to hole up inside. IDF soldiers sent to “prevent friction” joined the settlers in prayer, rather than dislodging them.",
         "The tactic, common in the West Bank, often succeeds in forcing Palestinian villagers to flee their homes, allowing the settlers to take over the surrounding land. This time was different for several reasons. Residents of Qusra, who had experienced similar attacks before, were quick to publicise this one and attract international attention. One of the besieged homes belongs to an American citizen. Mike Huckabee, the American ambassador, who usually supports the settlers, posted on social media that it was his embassy’s “request to remove the Israeli terrorists”.",
         "Three days into the siege, the IDF belatedly replaced the unit in Qusra with a more disciplined infantry battalion. It tried to remove the settlers and evict the Tel Talpiot outpost. The settlers brought in reinforcements and remained in the area. “It was an embarrassing incident,” said one officer. “The settlers forced us to play cat-andmouse, and we lost.”",
-        "The IDF announced the homes were in a “closed military zone”. It forced the families to remain blockaded indoors and prevented activists from coming to their aid and media from visiting. “We are besieged, the army is not allowing us to leave our",
+        "The IDF announced the homes were in a “closed military zone”. It forced the families to remain blockaded indoors and prevented activists from coming to their aid",
         "house,” said Qusai abu Ridi, one of the residents. But he was adamant they would continue to protect their property.",
         "That makes Qusra, despite everything, a rare case of Palestinian residents managing to hold on to their homes. Yet the incident is also part of a fresh escalation over the past month, as settlers have tried to grab as much land as they can before the election, which might return a government less supportive of their cause. On July 24th a group of armed settlers arrived in the village of Tel on what they claimed was a “hike.” Four Palestinians and two Israelis ended up killed. In response, the IDF deployed more troops and locked down Palestinian towns, including Nablus, one of the largest in the West Bank.",
         "The IDF claims to be enforcing order, but it has overseen a steep rise in attacks on Palestinians. The Shin Bet, Israel’s security agency, says 660 “nationalistic” attacks took place in the West Bank in the first half of 2026, up from 405 in the same period last year. More than 1,100 Palestinians have been killed in clashes with the IDF and settlers since October 7th 2023.",
@@ -785,17 +824,15 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Jerusalem",
         "West Bank",
         "Sea ISRAEL",
-        "Dead",
-        "Sea Dead",
-        "Sea Dead",
+        "Dead Dead Dead",
         "Gaza Strip",
-        "Sea",
-        "Joint Israeli West Bank, areas of control, 2026",
+        "Sea Sea Sea",
+        "West Bank, areas of control, 2026 Joint Israeli",
         "Palestinian",
         "cal masters expressly tell them to. That is unlikely to happen under Mr Netanyahu, who needs the support of settler-friendly far-right parties to have a chance of retaining power after the election.",
         "Things in the West Bank could get worse before then. Security officials warn that settlers are trying to provoke another intifada, a Palestinian uprising, which will force the IDF to enter Palestinian cities. That would bring even more violence and misery to the West Bank’s embattled Palestinians. Even if Mr Netanyahu’s party were voted out, his successors may have to deal with a crisis of his making."
       ],
-      "id": "028-emboldened-and-violent"
+      "id": "030-emboldened-and-violent"
     },
     {
       "section": "Middle East & Africa",
@@ -805,12 +842,12 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
       "pageEnd": 40,
       "paragraphs": [
         "Israel deploys vast forces and intelligence resources in the West Bank to protect half a million settlers. In theory, the IDF is obliged to protect Palestinians, too. But soldiers will only do this if their politi-",
-        "2 Driven out",
+        "Driven out 2",
         "West Bank, Palestinians displaced by settler violence and access restrictions",
         "Occurred after Hamasled attacks on Oct 7th",
-        "26* 25 24 2023",
-        "A military junta is consolidating power, with dire results at home and abroad O",
-        "VER THE past few days new billboards have appeared in Tehran, Iran’s capital. They depict the seven men who have taken charge in Iran since Ali Khamenei, the former supreme leader, was killed in an Israeli air strike on February 28th. Most remarkable is what the billboards do not show. There is no sign of Mojtaba Khamenei, the new supreme leader, who has not been seen in public since he was appointed. Nor are there any of the traditional religious symbols, such as the black and red flags of Imams Ali and Hussein. Only one of the seven men wears a turban.",
+        "2023 24 25 26*",
+        "A military junta is consolidating power, with dire results at home and abroad O VER THE past few days new billboards have appeared in Tehran, Iran’s capi-",
+        "tal. They depict the seven men who have taken charge in Iran since Ali Khamenei, the former supreme leader, was killed in an Israeli air strike on February 28th. Most remarkable is what the billboards do not show. There is no sign of Mojtaba Khamenei, the new supreme leader, who has not been seen in public since he was appointed. Nor are there any of the traditional religious symbols, such as the black and red flags of Imams Ali and Hussein. Only one of the seven men wears a turban.",
         "Fighting resumed within days of the document’s signing. The Strait of Hormuz remains largely closed to shipping. On August 17th the deadline the MOU set for a more permanent peace deal expired; a day later Iran appeared to lob missiles at the United Arab Emirates, an American ally in the Gulf, which responded with a trade embargo. Some observers worry that the hardliners’ sense of having parried American and Israeli attacks has revived their conviction in the viability of force. “They’re squandering the victory [with the MoU],” fumes an academic in Tehran.",
         "2,500",
         "2,000",
@@ -823,7 +860,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "The new regime could be keen on an agreement that delivers finance. After the Iran-Iraq war, Mr Rezaei spearheaded Iran’s reconstruction. As a presidential candidate, he called for foreign investment and a nuclear deal. “They’re saying isolation will kill us,” says another Iranian academic with ties to the new leaders. Nor, say some, are they fazed by diminishing Islamic norms. The crackdown on cafés may be merely a sop to their base. Some liken them to Muhammad bin Salman, the Saudi crown prince who is pursuing social liberalisation in place of political reform.",
         "Yet all observers agree that there is a new style of leadership. For almost four decades Mr Khamenei balanced the competing interests of his realm, alternating reformists and hardliners. The new commanders, by contrast, favour action. Iranians and the world may yet rue the day Mr Khamenei left the scene."
       ],
-      "id": "029-rise-of-the-generals"
+      "id": "031-rise-of-the-generals"
     },
     {
       "section": "Middle East & Africa",
@@ -850,7 +887,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Such highs will not be reached everywhere in South Africa. In the recent poll the ANC still remains ahead of the DA (34% versus 27%) on average. Race remains highly predictive of whether a voter opts for the DA, even though it runs just 12% of all municipalities but accounts for most of the clean audits.",
         "Yet 32 years after the end of white rule, when most South Africans are despondent about democracy, showing that political choices can make a difference is crucial. Mr Mchunu, a former ANC member, says that he did not vote for Mr Pappas last time, but may do so in November. “I tell my sons that apartheid is over. What matters is not race but changing the country.”"
       ],
-      "id": "030-state-capture-in-miniature"
+      "id": "032-state-capture-in-miniature"
     },
     {
       "section": "Middle East & Africa",
@@ -870,7 +907,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "It does not help that Israel and Turkey, a patron of Somalia, are increasingly hostile to each other. Turkeyhas long been trying to mediate between Somalia and Somaliland, yet numerous rounds of talks in Ankara and Istanbul have failed. “Next time they can happen in Tel Aviv,” chortles Irro, who seems unbothered by the prospect of a proxy war. Yet America may well be reluctant to stir the pot by recognising Somaliland.",
         "The Houthis, meanwhile, have threatened to attack any Israeli military installation in the statelet. An American base there could become a target, too. That would shatter the reputation for peace and stability on which Somaliland has long built its case for international recognition. But “there is nothing free in the world,” says Irro. He seems willing to pay a price to put his country on the map—the question is, how high?"
       ],
-      "id": "031-irro-s-gambit"
+      "id": "033-irro-s-gambit"
     },
     {
       "section": "Asia",
@@ -899,7 +936,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "The woes of the ice-age generation have long had the government’s attention.",
         "For decades, authorities have come up with programmes to help them find jobs and nudge reclusive ones to connect with the outside world. Yet as the ice-agers grow older they face new problems. Beyond thin pensions and savings, questions loom, for instance, over housing; compared with older Japanese, this cohort is less likely to own homes, and Japan’s rental market is unfriendly towards older tenants. The government is belatedly adjusting: in April, it produced a three-year plan for the ice-agers, spanning measures from asset-building to housing. But a lot more serious thinking will be needed."
       ],
-      "id": "032-frozen-out"
+      "id": "034-frozen-out"
     },
     {
       "section": "Asia",
@@ -911,8 +948,8 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "All this has left the ice-agers with low lifetime earnings (and therefore little in the way of savings). That points to a looming crisis as they reach old age. Japan’s pension system ties payouts to lifetime earnings, so decades of suppressed pay will translate into low pensions. “Those who happened to come of age in a down-",
         "Boomer bulge",
         "Japan, population by age group, 2026, % of total Total population=122.4m",
-        "100+ 4 3 2 1 0 0 2 1 4 3",
-        "Female Female Female Male Male Male",
+        "4 3 2 1 0 0 1 2 3 4 100+",
+        "Male Male Female Female Male Female",
         "90-94",
         "80-84",
         "70-74",
@@ -932,7 +969,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Elephants act as landscape architects. They disperse seeds, shape forests and fertilise soil. They keep wetlands alive by digging. “Arthashastra” advised India’s rulers to protect forests inhabited by the magnificent beasts. Those in charge today would do well to take note.",
         "Never forget"
       ],
-      "id": "033-no-room-to-roam"
+      "id": "035-no-room-to-roam"
     },
     {
       "section": "Asia",
@@ -948,7 +985,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "in Australia, Japan and Singapore, according to the Pew Research Centre. Japan has also sought to beef up its own defences; the drive for greater autonomy is shaping revisions to its national security strategy expected later this year.",
         "Yet in the face of threats from a richer and increasingly assertive China and a nuclear-armed North Korea, American allies in Asia find it hard to imagine their securitywithout America. Despite the falling level of trust, more than 60% of South Koreans still see the alliance with America as the best way to ensure their security. Such results, writes Sohn Yul, the president of the East Asia Institute, reflect a “contradictory situation where [South Korea] does not trust the United States yet has no choice but to rely on it.” The dilemma is shared across Asia."
       ],
-      "id": "034-alliance-mismanagement"
+      "id": "036-alliance-mismanagement"
     },
     {
       "section": "Asia",
@@ -973,7 +1010,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "One important reform remains in force. In 2022 Mr Tokayev introduced a single presidential term-limit. He has pledged to",
         "abide by this, but the constitution offers him a loophole. He has the right to a new “first” term, the Constitutional Court recently ruled, so he could run again—a tried-and-tested tactic to cling to power loved by Central Asian autocrats as well as by Vladimir Putin in Russia and Recep Tayyip Erdogan in Turkey. The end of his current (second) term in 2029 will thus become a litmus test of Mr Tokayev’s professed commitment to ridding Kazakhstan of monarchical rule."
       ],
-      "id": "035-reset-or-repress"
+      "id": "037-reset-or-repress"
     },
     {
       "section": "Asia",
@@ -995,7 +1032,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "The other is to lean on the one towering figure they do have. In June the cabinet feted Mr Modi for becoming India’s “longest serving elected PM for consecutive terms”. The heavy caveating excludes Nehru’s first five years (elections had not yet been held) and Indira Gandhi (she lost power and then regained it). The animus against Nehru is understandable. There cannot be two first prime ministers of independent India.",
         "The BJP may have saffronised India. But its revisionism has failed to take. That much was clear during protests for education reform last month in Delhi. Students carried copies of the constitution. They displayed photos of B. R. Ambedkar, its architect; Bhagat Singh, an anti-colonial revolutionary; and Gandhi. They chanted slogans dating to the freedom struggle. Despite having spent most of their conscious lives in the second republic, their symbols were those of the first. Building a nation is no easy task. Retrofitting one is harder still."
       ],
-      "id": "036-refounding-fathers"
+      "id": "038-refounding-fathers"
     },
     {
       "section": "China",
@@ -1018,7 +1055,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "▸less fuel burned—fuel accounts for seven-",
         "sponse centres. (The International Maritime Organisation has banned the use and carriage of heavy fuel oil in the Arctic since 2024, though Russia does not heed the ban.) Noise pollution from ships also affects marine mammals such as whales and walruses in the Arctic more than elsewhere, since low-frequency sounds travel farther in cold water. Ships on the northern route pass through vital feeding and breeding grounds."
       ],
-      "id": "037-pole-position"
+      "id": "039-pole-position"
     },
     {
       "section": "China",
@@ -1034,18 +1071,17 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "All this helps to explain why total transit cargo on the Northern Sea Route was just 3.2m tonnes in 2025, up from about 3m the year before. That is tiny compared with about 464m tonnes through the Suez Canal last year. The bulk of Arctic shipping is between Russian and Chinese ports, rather than between Asia and Europe, much of it consisting of shipments of Russian oil or gas. In a recent report, the Clingendael Institute, a Dutch think-tank, concluded that the route’s “most viable function... remains that of a selective corridor for Arctic resource exports.”",
         "Still, as Malte Humpert of the Arctic Institute in Washington argues, the NSR will grow in importance for China as a seasonal trade corridor for when traditional routes are disrupted. He envisages hundreds of annual container passages a decade hence. “The question is when Western operators decide to re-enter the market—and more importantly, whether they still can,” Mr Humpert says. Arctic navigation requires training and operational experience, and “China and South Korea are building that expertise now.”",
         "The environmental impact is potentially greater, too. Bellona, a Norwegian environmental group, warned in a report last year that in the Arctic there are no effective ways to deal with fuel spills because of the difficulty of cleaning up fuel in cold conditions and the distance from emergency-re-",
+        "t i c",
         "North Pole",
-        "For the moment, Sea Legend admits, the tight seasonal window and limited capacity of its Arctic service make it hard to compete with conventional routes. But it is already planning to expand the navigational window to four months by 2028 and eventually to the entire year. Further conflict in the Middle East could provide incentives for it and other companies to invest in larger, ice-strengthened ships. And if temperatures in the Arctic continue to rise three times faster than the global annual average, then doubts about the viability of the NSR may recede as fast as China’s ambitions for the region grow. ■ *Approximate, dependent on routing Sources: China Shipowners' Association; Sea Legend",
-        "Bering",
-        "Strait Bering",
-        "Strait Bering",
-        "Strait",
+        "For the moment, Sea Legend admits, the tight seasonal window and limited capacity of its Arctic service make it hard to compete with conventional routes. But it is already planning to expand the navigational window to four months by 2028 and eventually to the entire year. Further conflict in the Middle East could provide incentives for it and other companies to invest in larger, ice-strengthened ships. And if temperatures in the Arctic continue to rise three times faster than the global annual average, then doubts about the viability of the NSR may recede as fast as China’s *Approximate, dependent on routing ambitions for the region grow. ■ Sources: China Shipowners' Association; Sea Legend",
+        "Bering Bering Bering",
+        "Strait Strait Strait",
         "Northern Sea Route",
         "Felixstowe",
         "20 days*",
         "Busan Strait of Hormuz",
-        "Ningbo Suez Canal",
-        "CHINA",
+        "Suez Canal",
+        "CHINA Ningbo",
         "Red Sea",
         "Suez Canal route",
         "40 days*",
@@ -1057,7 +1093,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Mr Xie’s concoction is 58 yuan for a 100g chunk—equivalent to a cheap meal for two. It is an awkward time to be selling premium products to belttightening consumers. Churning out the cheapest possible goods to undercut rivals is the usual formula. Milk-tea brands are a case in point.",
         "Why are people paying out for chocolate? Mr Xie says that making chocolate with Chinese flavours such as longan, which is like a large lychee, seems to go down well. A simpler explanation is that, at long last, Chinese people are learning to love the most delectable flavour in creation."
       ],
-      "id": "038-eating-bitterness"
+      "id": "040-eating-bitterness"
     },
     {
       "section": "China",
@@ -1078,7 +1114,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "They do things differently there For all that, Jiang and Zhu were certainly daring, taking bold risks against real resistance. Conservatives (ie, leftists) opposed their market-driven policies, worried that opening China to trade with the world would suck in toxic political ideas. Many reforms also exacted a vast human toll, with more than 30m workers laid off— though the eventual benefits were larger. Do today’s leaders have similar vision and courage? True, they have been in charge during some high-tech advances. Yet a trade war with America drags on, while property remains stuck in its years-long funk. Tributes to Zhu came not just from ordinary people but from universities, legal associations, financial groups and think-tanks. It is hard not to see their veneration as a plea for wiser leadership.",
         "Beyond that is something unquantifiable about the style of the leaders in the 1990s—about the frankness with which they spoke, their sense of warmth and real humanity, their ease when out and about among the public. Certainly, people were also wary of Jiang and Zhu; under them, China was hardly free. But they were admired and even loved. Today, when people talk of Mr Xi, the dominant emotion is often fear. Many Chinese are so circumspect as to avoid mentioning his name altogether. He is the paramount ruler, not a chap who cracks jokes or bursts into song."
       ],
-      "id": "039-a-glum-china-pines-for-the-1990s"
+      "id": "041-a-glum-china-pines-for-the-1990s"
     },
     {
       "section": "International",
@@ -1095,10 +1131,10 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "The proximate cause of the crisis is the prodigious use of interceptors by America and its Middle Eastern allies during Mr Trump’s war on Iran this year. The Centre for Strategic and International Studies (CSIS), another think-tank, thinks the Pentagon has fired nearly two-thirds of its prewar stock of Patriots as well as lots of other interceptors (see chart on next page).",
         "But the war merely hastened a reckon-",
         "→ALSO in thiS SectiOn",
-        "⏩ — The Telegram is away",
+        "UAV for the price of a used car, and your — The Telegram is away answer is a surface-to-air missile that costs ⏩",
         "ing that has been decades in the making. On both sides of the Atlantic defence industries work to a peacetime rhythm, though the drums of war have been beating faster. That error has been compounded by the global proliferation of missiles, generals’ tendency to spend more on flashy weapons than on the munitions they consume, America’s dysfunctional budget process and complacency about American military supremacy in the air.",
         "The CSIS reckons it will take until 2029 to rebuild Patriot stocks to pre-war levels. That is assuming Congress approves Mr Trump’s gargantuan $1.5trn defence-budget request (a 50% increase on current spending), which is unlikely. Yet Patriots have become the prime system for pointdefence—that is, to protect a specific target such as an air base—for 19 countries. “Patriot is a dinner-jacket solution: you don’t need it very often, but when you do, very little else will do,” explains Justin Bronk of the Royal United Services Institute (RUSI), a British think-tank.",
-        "The hitch is that ballistic missiles are generally cheaper than the interceptors trying to hit them (PAC-3 MSE rounds costs $4m-5m apiece). Iran’s Shahed drones (or other unmanned aerial vehicles, UAVs) are two orders of magnitude cheaper still. “If your adversary can field a one-way attack UAV for the price of a used car, and your answer is a surface-to-air missile that costs",
+        "The hitch is that ballistic missiles are generally cheaper than the interceptors trying to hit them (PAC-3 MSE rounds costs $4m-5m apiece). Iran’s Shahed drones (or other unmanned aerial vehicles, UAVs) are two orders of magnitude cheaper still. “If your adversary can field a one-way attack",
         "▸the same as a small apartment here in Lon-",
         "don, you’re losing the exchange even though you’re winning every single engagement,” Colonel Sabah Al Sabah, a Kuwaiti officer, argued at a recent RUSI event. What is more, defenders typically fire at least two interceptors at an incoming missile to improve the odds of success.",
         "Ukraine has improvised a system of layered defences. It has a world-class network to counter swarms of Russian drones. It can also take out most larger cruise missiles, thanks in part to European air-defence systems. But only the precious Patriots can take on Russia’s Iskander-M and Kinzhal ballistic missiles. In March Ukraine boasted of intercepting about 70% of ballistic missiles. In July it was 20%. In August the rate will be even more dire. On one night—August 5th—there were no interceptions. The air force has stopped issuing regular updates. Russia, taking note, is increasing missile production.",
@@ -1119,10 +1155,10 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Instead, American forces are practising how to survive within China’s “weaponsengagement zone” through various forms of dispersal. In a world of proliferating, cheap drones and missiles, hardening, dispersing and concealing military targets— and rebuilding them quickly if they get destroyed—are essential skills.",
         "Winchester on the horizon",
         "United States, estimated munitions stockpiles, % Feb 27th-Aug 16th 2026",
-        "Remaining High Low Used estimate:",
+        "Used estimate: Low High Remaining",
         "Air-defence interceptors",
         "Pre-Iran war inventory",
-        "100 80 60 40 20 0",
+        "0 20 40 60 80 100",
         "Although deep-strike weapons are no panacea, they do help to deter attack. That explains why America’s allies are scrambling to find the means to shoot at faraway targets. Ukraine, already under relentless attack, hopes that carrying the war to Russia will cause enough pain to make Vladimir Putin reconsider endless conflict.",
         "Patriot",
         "2,330",
@@ -1135,7 +1171,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Long-range strike missiles",
         "All the possible solutions to the interceptor shortage, even if accelerated and intensified, will take time. In Ukraine, meanwhile, civilians must still shelter underground. As they contemplate another freezing winter of peril, many will ask how their leaders let it come to this. Other governments should take heed."
       ],
-      "id": "040-going-winchester"
+      "id": "042-going-winchester"
     },
     {
       "section": "Business",
@@ -1154,11 +1190,11 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "55 Meta’s blockbuster trial",
         "55 Reddit’s woes",
         "56 Canada’s oil boom",
-        "57 Schumpeter: Data-centre politics ⏩",
+        "the Gulf. New Chinese production hubs 57 Schumpeter: Data-centre politics are gradually being woven into customers’ ⏩",
         "the tight-knit ecosystems back home. Third, they are increasingly dominated by strategic industries, from electric vehicles and clean energy to data-centre gear. The consequence is that a rewiring of global manufacturing is under way.",
         "A number of reasons explain why Chinese firms are making their wares in an expanding array of places. Weak consumer spending and fierce competition at home have encouraged them to venture into new markets. The tariffs introduced by the second Trump administration have also incentivised production in places that have been hit with less punitive levies than historic Chinese outposts such as Vietnam.",
         "Various countries in the global south have dangled added incentives. Egypt, for instance, offers a “golden licence” that slashes red tape for big projects. Mohamed Eldib, a lawyer who helps Chinese firms set up operations in the country, says they are eager to “come in and make money” selling to Egypt’s 120m people while also using it as an export base.",
-        "The result is increasingly dispersed production footprints. Take JA Solar, Jinko- Solar and TrinaSolar, three Chinese manufacturers that began making solar panels in various South-East Asian countries a decade ago and are now setting up factories in the Gulf. New Chinese production hubs are gradually being woven into customers’",
+        "The result is increasingly dispersed production footprints. Take JA Solar, Jinko- Solar and TrinaSolar, three Chinese manufacturers that began making solar panels in various South-East Asian countries a decade ago and are now setting up factories in",
         "makers of high-speed optical components, such as Zhongji InnoLight, whose products are used by America’s cloud-computing giants around the world.",
         "supply chains. Nordex, a German manufacturer of wind turbines, now purchases blades from a factory in Morocco that its Chinese supplier opened last year.",
         "Flying dragons",
@@ -1166,7 +1202,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Chinese firms hoping to invest abroad have found they have the field to themselves, as Western rivals concentrate their factory-building in America to appease its protectionist government. An Egyptian official adds that, when Chinese businesses decide to build, they do so quickly.",
         "Europe has also emerged as a popular destination. Chinese firms’ foreign direct investment in all-new “greenfield” projects on the continent rose by half in 2025, to a record €8.9bn ($10.1bn), according to Rhodium Group, a research firm, and MERICS, a think-tank. Hungary has attracted much attention. Serbia has also seen a growing Chinese presence. Linglong Tire, a carparts supplier, is among the Chinese manufacturers to have begun producing in the country. It recently announced it was expanding the capacity of its largely automated factory in the city of Zrenjanin, which supplies Western carmakers including Volkswagen and Ford.",
         "Their foreign expansion is not without obstacles. The volatile tariffs imposed by America have resulted in some projects being cancelled or cut back. On August 13th the White House published a report titled “The Great Transshipment Scam” that called for sweeping restrictions on imports with even a whiff of Chinese involvement (see Finance & economics section). At the same time governments in places such as Brazil and Turkey have been imposing local-content requirements, which result in more of the value being added in their countries but make manufacturing there less attractive. Currency fluctuations and high borrowing costs in emerging markets complicate matters further.",
-        "25 20 15 2010",
+        "2010 15 20 25",
         "27%. With time, however, more of those inputs may be sourced from nearer by.",
         "Meanwhile, China’s logistics firms are helping its manufacturers to link their newly sprawling supply chains. These now operate or have invested in at least 132 foreign ports, from Greece to Sri Lanka, along with airports and rail lines, including one from Budapest to Belgrade completed earlier this year.",
         "At the same time China’s global supply chains have deepened, with more upstream manufacturing taking place abroad. Gotion, a Chinese battery-maker, is constructing a gigafactory in an industrial zone 70km north-east of Morocco’s capital, Rabat; a number of Chinese suppliers, including BTR, which makes anodes and cathodes, and Hailiang Group, which produces copper foil, are building factories a few hours’ drive away to provide inputs. At an industrial zone on the outskirts of Cairo, where a Chinese manufacturer of home appliances has built a factory, an executive notes that the firm has likewise encouraged some of its suppliers to set up local plants.",
@@ -1175,7 +1211,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Plenty of inputs are still shipped in. Machine tools are often imported from Chinese suppliers such as Yangli Group. So are components or materials that are unavailable (or much pricier) locally. Chinese exports of capital goods increased by 14% in the first half of 2026, year on year. Exports of intermediate goods rose by",
         "So far the overall share of global manufacturing taking place in China has shown no indication of decline. Yet with ever more of its companies investing abroad, that may soon change. Even then, however, the world will continue to rely on Chinese goods—wherever they are made."
       ],
-      "id": "041-routes-and-branches"
+      "id": "043-routes-and-branches"
     },
     {
       "section": "Business",
@@ -1192,8 +1228,8 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Europe in particular has emerged as a centre for efforts to flush America Inc out of government supply chains. France’s national government is planning to ditch Teams and wants to move some computers",
         "Patron states",
         "Selected countries, number of government contracts won by American firms, % of total",
-        "6 5 4 3 2 1 0",
-        "Germany Netherlands France Sweden Poland Italy Denmark Britain Spain Australia",
+        "0 1 2 3 4 5 6",
+        "Australia Spain Britain Denmark Italy Poland Sweden France Netherlands Germany",
         "to Linux. Local governments, including the cities of Reus in Spain and Aarhus in Denmark, have turned to European cloud providers such as Nextcloud and Hetzner, both from Germany. In June the European Commission unveiled a plan to boost the continent’s “technological sovereignty” that, among other things, aims to shift the processing of sensitive government data to such providers. Last year Spain cancelled an order for F-35 fighter jets, supplied by America’s Lockheed Martin. British politicians are urging the prime minister to implement a break clause in a contract between Palantir, an American technology firm, and the National Health Service (see Britain section).",
         "The Economist’s estimates suggest that, at an aggregate level, American companies account for a modest share of public spending abroad. We calculate that, of the $25trn in sales generated last year by listed American companies, perhaps $500bn (or 2%) came from foreign governments. That is equivalent to roughly 7% of government procurement in OECD countries other than",
         "Air superiority",
@@ -1211,7 +1247,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "For consolation, America’s allies should remember that there are plenty of dependencies in the other direction. Much of America’s federal government runs on",
         "software provided by Germany’s SAP. And American firms selling to foreign governments often depend on global supply chains. The rear fuselage of every F-35 is built by BAE Systems, a British weapons manufacturer, in Lancashire. The most advanced chips used in cloud computing are made in facilities operated by TSMC, a Taiwanese manufacturer, using gear from ASML, a Dutch one. America’s allies might usefully focus on making themselves even more indispensable."
       ],
-      "id": "042-us-and-them"
+      "id": "044-us-and-them"
     },
     {
       "section": "Business",
@@ -1233,7 +1269,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "the word “hooked”. But unlike a trial in Los Angeles in March, in which Meta and Google, were obliged to pay damages to a 20-year-old harmed by spending much of her life on social media, the Oakland case is not focused on addiction.",
         "Public concern in America about the impact of social media on children is high, and being dragged through the courts may not help Meta’s image with parents. In order to head off similar worries about AI, on August 18th OpenAI launched ChatGPT for Kids, which strengthens guardrails for under 18-year-olds."
       ],
-      "id": "043-returns-policy"
+      "id": "045-returns-policy"
     },
     {
       "section": "Business",
@@ -1248,7 +1284,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Meta’s investors tend to think that the burden of proof on the deception charges is “quite high”, says Gil Luria of D. A. Davidson, an investment bank. Litigation risk has weighed on Meta’s valuation, contributing to an earnings ratio that is lower than those of its big-tech peers. But rather than fearing a giant payout, shareholders worry more about remedial changes that the prosecutors may seek if Meta loses in court, according to Mr Luria. Those include changes to features Meta, Google and TikTok use to keep user engagement high, such as “infinite scroll”, which continuously loads new posts. “If we didn’t have infinite scroll, we wouldn’t have as many ads,” Mr Luria says.",
         "For all the attention the Meta trial will receive, court verdicts can have less of an impact than the headlines suggest. The tobacco industry agreed in a settlement of 1998 to shell out more than $200bn over 25 years. But such outcomes have a “disappointing history” in America, says Matthew Lawrence of the Emory University School of Law. “We can mitigate the harms of industries exploiting addiction, but we have not yet had great success in finding ways to eliminate the harms.”"
       ],
-      "id": "044-social-reckoning"
+      "id": "046-social-reckoning"
     },
     {
       "section": "Business",
@@ -1273,7 +1309,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "a conduit from Alberta to the west coast in British Columbia. That forced the national government to step in and complete it. Oil eventually started flowing in 2024.",
         "Lately the political mood has shifted. A trade war with America, the destination for 90% of Canadian oil, has shifted the federal government’s focus to reducing dependence on its southern neighbour. That includes support for building new infrastructure to transport oil (and gas) to ports on Canada’s west coast, from where it can be shipped to Asia. Mark Carney, Canada’s current prime minister, is intent on slashing the red tape that holds up projects, including streamlining environmental permitting and consultations with indigenous communities. The speedier process will apply to a new pipeline under development to British Columbia, announced last month. Lisa Baiton of the Canadian Association of Petroleum Producers, an industry group, has spoken of a “generational opportunity” to rally political and public support behind new oil projects."
       ],
-      "id": "045-good-bot-bad-bot"
+      "id": "047-good-bot-bad-bot"
     },
     {
       "section": "Business",
@@ -1286,7 +1322,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "One option for Reddit is to bargain for a better deal with AI providers. It has been negotiating new agreements with Google and others. If that does not work, lawsuits may. Reddit has already sued Anthropic, another model-maker, and Perplexity, an AI search engine. Both suits allege that the companies scraped Reddit’s data illegally. (Anthropic and Perplexity have said they did not break the law.) Victory in court—or lucrative settlements—would give the chat site greater leverage in negotiations over licensing its data.",
         "Ultimately, though, Reddit hopes to lessen its reliance on other tech firms. Traffic from search is “not where our business lives”, said Steve Huffman, its boss, in last month’s earnings call. Instead the company hopes to encourage more users to visit its site directly, and spend more time browsing once there. That would further boost its ad revenue, which grew by 64% in the second quarter, year on year. Ms Wong is optimistic that the (mostly) human content on Reddit will appeal to users as they grow tired of interacting with chatbots. Aspiring film-makers need not fear being starved of material just yet."
       ],
-      "id": "046-on-shifting-oil-sands"
+      "id": "048-on-shifting-oil-sands"
     },
     {
       "section": "Business",
@@ -1298,7 +1334,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Getting more oil to market is also set to become easier. Justin Trudeau, Canada’s former prime minister, was tepid in his support for new pipelines, fearing the consequences for the climate. In 2018 regional political opposition led Kinder Morgan, an American firm, to suspend work on",
         "This week our editor-in-chief interviews historian and author Yuval Noah Harari. To watch the video, go to economist. com/insider"
       ],
-      "id": "047-watch-the-insider"
+      "id": "049-watch-the-insider"
     },
     {
       "section": "Business",
@@ -1321,7 +1357,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Could the slightly fake war against data centres in fact be a “phoney” one, poised to turn real? It is hard to imagine. Politicians are rarely willing to halt projects that have already broken ground. As for the new ones, developers can to some extent vote with their feet. So far that has meant moving west. It could also involve building more on federal land. Eventually, it might involve more construction abroad—or, if Elon Musk is to be believed, in space.",
         "Stoppable force, movable object It is often said that China has an advantage in the AI race because it can build big things by force. Yet America has the power of willing things into existence by exaggeration. The grand plans of developers will be watered down. Politicians will also overstate their opposition. Often they will cancel each other out. Meanwhile, the searing pace of construction will continue."
       ],
-      "id": "048-shadow-boxing"
+      "id": "050-shadow-boxing"
     },
     {
       "section": "Finance & economics",
@@ -1339,7 +1375,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "▸sions and some critiques are hugely valu-",
         "perspective you must consider the specific institutions in the past and the historical events... that influence them,” he says. “I don’t think this is tautological at all.”"
       ],
-      "id": "049-the-rise-of-the-world-s-most-influential-economist"
+      "id": "051-the-rise-of-the-world-s-most-influential-economist"
     },
     {
       "section": "Finance & economics",
@@ -1360,7 +1396,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "These academic disputes could end up mattering a great deal. Mr Acemoglu may not think AI is about to turbocharge productivity, but he does worry about its effects on democracy and jobs. His new book focuses on its potential social harm rather than its potential benefits. His proposal to limit that harm, “pro-worker AI” that would augment the value of human labour rather than replacing it, sounds terrific—but also obvious.",
         "Mr Acemoglu’s influence in the AI debate is clear in a recent statement, signed by dozens of prominent economists, which argues that “we must act now” to “steer AI in a direction that complements humans and benefits society”. But who are “we”? And who is to decide what sort of AI does or does not complement humans? Even economists who signed the petition say they are not entirely sure. So great is Mr Acemoglu’s stardom that it can sometimes blind the critical faculties."
       ],
-      "id": "050-yielding"
+      "id": "052-yielding"
     },
     {
       "section": "Finance & economics",
@@ -1374,7 +1410,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Governments have few other good options. At the Fed’s meeting in June members of its rate-setting committee were briefed on how ownership of Treasuries has shifted from “relatively price-insensitive official-sector holders to more pricesensitive private investors”. That is likely to increase the premium bondholders expect for long-term debt. In response to such pressures America, Britain and Japan have increased their sales of shorter-term bonds with lower yields. But as a result their debt stocks will roll over more often, raising the risk that such moments coincide with high interest rates.",
         "A second unenviable option is for central banks to buy back more debt. But many of them had hoped to shrink their balance-sheets, not to expand them. They may therefore be reluctant to rely too heavily on bond purchases as a tool to reduce yields. All this means that bond markets are likely to remain wary. Interventions such as the Treasury’s may help for the time being. They are unlikely to placate buyers for long."
       ],
-      "id": "051-goodhart-s-law-with-chinese-characteristics"
+      "id": "053-goodhart-s-law-with-chinese-characteristics"
     },
     {
       "section": "Finance & economics",
@@ -1385,13 +1421,13 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
       "paragraphs": [
         "An unpalatable measure",
         "China, urban unemployment, m",
-        "25 20 15 10 2004",
+        "2004 10 15 20 25",
         "verify or dismiss if China’s unemployment figures were as fluid as its economy.",
         "Instead, economists must rely on a variety of more or less unsatisfactory proxies. Mr Batson has spotted a new one—or rather, a revived one. He advises looking again at an older gauge, which the modern survey-based figure was supposed to supersede. This measure, which has been collected since 1978, counts only those who have registered as unemployed with local authorities, a first step towards applying for jobless benefits. For decades, this was also a government target, and also uncannily stable. With the arrival of surveyed unemployment, it fell into obscurity. The government stopped targeting it and even stopped releasing the percentage rate. But once a year the raw number of people registered as unemployed still appears in the official database, albeit with a substantial lag. The number jumped at the end of 2025 to 12.7m, an increase of almost 16% from the year before (see chart).",
         "That total must be interpreted with care. Rule changes in 2020, just before the pandemic struck, made it easier to register, especially for people living far from their place of birth. But no tweaks in the rules explain the more recent increase in registrations, argues Mr Batson. The rise would instead seem to represent “real stress in the labour market”.",
         "If so, then this uncharacteristic jump in a once inert statistic may also illustrate a deeper principle. “When a measure ceases to be a target,” Mr Batson suggests, “it becomes a good measure again.” Call it Batson’s corollary to Goodhart’s law. If the registered unemployment number attracts too much fresh attention, of course, the government may stop updating it. It has form. When youth-unemployment figures became a lightning rod for criticism in 2023, the government solved the problem by suspending them. Tracking China’s economy has never been easy. When a measure becomes a target, it ceases to be a good measure. And when a measure becomes too embarrassing, it ceases to be."
       ],
-      "id": "052-trash-talk"
+      "id": "054-trash-talk"
     },
     {
       "section": "Finance & economics",
@@ -1413,7 +1449,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "The top three Swiss stocks are also stodgy ones with stable earnings and regular dividends—and so inherently less skittish than tech shares. AI will transform them, as it will all sectors. But their fortunes are not hitched to the vagaries of the AI capex cycle.",
         "Like a championship belt, dominance can be forfeited. Novo Nordisk took over the Danish bourse thanks to Ozempic, then shed its index weight as Eli Lilly’s better obesity drug ate its lunch. That serves as a reminder that the stock market aims to capture investors’ best collective guess at tomorrow’s equity reality. It mirrors today’s only when the future is likely to look much like the present. In the age of AI, and of abundant private capital that feeds a long roster of unlisted pretenders which benchmarks omit, that is increasingly not the case."
       ],
-      "id": "053-lies-damned-lies-and-stock-markets"
+      "id": "055-lies-damned-lies-and-stock-markets"
     },
     {
       "section": "Finance & economics",
@@ -1434,7 +1470,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Is there a third option, neither anarchy nor hegemonic domination? Perhaps collections of other states—the “middle powers” referred to by Mark Carney, Canada’s prime minister—could club together to provide public goods. The treaty guaranteeing a tollfree Rhine was signed by a group of German states, France and the Netherlands. But a paper last year by Anwesha Banerjee, Ottmar Edenhofer and Ulrike Kornek, three economists based in Germany, sounds a note of scepticism; a more equal balance of power between countries encourages free-riding and jockeying for position. It may be unlikely, then, that middle powers would do any better at keeping Hormuz toll-free.",
         "History doesn’t repeat itself but it does Rhine Then there are the truly global public goods. Whether or not there are tolls on the Rhine is, for the time being, a moot point. Europe’s extended heatwave and drought, now into its third month, has reduced the water level at Kaub to just six centimetres, below the previous record of 25cm in 2018. That is barely enough for children to paddle in, let alone for heavily laden tankers to pass. This will knock 0.2 percentage points off German GDP this year, estimates Oxford Economics, a consultancy. The danger is not only that states manage to extract rents from what was once free, but that the world is less capable of providing public goods at all."
       ],
-      "id": "054-the-phantom-tollbooth"
+      "id": "056-the-phantom-tollbooth"
     },
     {
       "section": "Science & technology",
@@ -1452,11 +1488,11 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "66 Probing Antarctica’s ice",
         "66 Dinosaurs’ stomach stones",
         "67 A new subatomic particle",
-        "67 Well Informed: When working, move it! ⏩",
+        "the North Atlantic west of the British Isles 67 Well Informed: When working, move it! (see map on next page). ⏩",
         "suggests aircrafts’ contrails and the cirrus clouds they induce may do more to raise the planet’s temperature than carbon dioxide emitted by the aircrafts’ engines.",
         "This warming is, though, to some extent, optional. For contrails to persist the air they are in must be well below freezing point and yet contain a significant amount of not-yet-frozen water vapour. The thing which stops this water vapour freezing is a lack of particles that might “seed” the process by acting as nuclei around which crystals can form. A contrail provides such seeds by the trillion, and so creates cloud where there was none.",
         "The nucleus of the problem Such ice-supersaturated regions (ISSRs) tend to be found at altitudes of 8-13km. They are a few hundred kilometres across, but only a few hundred metres deep. Keep aircraft out of them and you should get rid of a lot of persistent contrails—which means getting rid of some warming, too.",
-        "On August 18th a consortium based in Britain announced Operation Blue Skies, the most important trial of this approach to cooling the climate so far undertaken. It will take place in Shanwick, a piece of airspace that covers 1.8m square kilometres of the North Atlantic west of the British Isles (see map on next page).",
+        "On August 18th a consortium based in Britain announced Operation Blue Skies, the most important trial of this approach to cooling the climate so far undertaken. It will take place in Shanwick, a piece of airspace that covers 1.8m square kilometres of",
         "▸ There have been smaller trials of the idea. One was run by Germany’s aerospace agency in 2021 and another, in 2025, by American Airlines and Contrails. org, a notfor-profit research organisation largely funded by Breakthrough Energy, a network of investors founded by Bill Gates. The results were promising. Blue Skies, which is considerably bigger, should show whether ways to predict and route around ISSRs are both effective and suitable for operational use.",
         "Shanwick is a bit of airspace well suited to such a project. It is prone to the right sort of damp chilliness at airliners’ cruising altitudes, and it is used by a lot of planes. In combination, those factors mean that, although it covers just 0.4% of Earth’s surface, models suggest Shanwick is responsible for about 5% of contrail-associated warming. What is more, European and American weather satellites monitor the area day and night in both visible-light frequencies and infrared, making it easy to see what is going on.",
         "The Winter’s tale The plan is that on between 20 and 40 days over the coming winter and again the one after that air-traffic controllers at NATS, the company which looks after British airspace, will alter the flight paths of aircraft passing through Shanwick to keep them out of suspected ISSRs. These changes will route the planes a few hundred metres below their filed flight plans when conditions suggest it and when there is no reason not to (such as turbulence).",
@@ -1476,7 +1512,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "The benefits are not free. Flying at lower altitudes increases the amount of fuel used, which is a cost to airlines, and the amount of carbon dioxide emitted, which is a cost to the planet. But neither cost is huge. Estimates from models suggest that avoiding ISSRs makes flights only slightly",
         "There is, then, no free lunch. But the idea that giving passengers a minute or two longer to savour the in-flight cuisine that they have paid for on a few of the world’s many many flights might result in some good is about as appealing as climate interventions get."
       ],
-      "id": "055-bluer-cooler-skies"
+      "id": "057-bluer-cooler-skies"
     },
     {
       "section": "Science & technology",
@@ -1492,7 +1528,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "around the hills. They found that if the vehicles were sent along both sides of a line of geophones, parallel with the sensors, they got the effect they were after.",
         "Since the Larsemann Hills’ firn had already been mapped the old-fashioned way, Dr Liu was able to compare his machinecreated images with those obtained using dynamite. They were pretty much identical. He thus seems to have devised a way of mapping the firn’s structure that is simpler than blowing it up, but equally good."
       ],
-      "id": "056-a-signal-from-the-noise"
+      "id": "058-a-signal-from-the-noise"
     },
     {
       "section": "Science & technology",
@@ -1511,7 +1547,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "That shift may have helped make possible the evolutionary success of birds. Teeth are heavy, as are the jaw muscles those teeth require to do their job. This puts a lot of weight near an animal’s front. Shifting the job of grinding, and the muscles and hard surfaces involved, to the stomach centralises an animal’s centre of gravity in a way that would make it easier for it to rise from the ground.",
         "Curiously, it is clear from the fossil record that the very earliest birds of all did not have beaks. But the fact that so many of their theropod relatives did, and that birds themselves evolved them at least twice, suggests the transition was easy. It may thus be that part of the secret to taking successfully to the skies was, quite literally, having the stomach for it."
       ],
-      "id": "057-the-guts-for-flight"
+      "id": "059-the-guts-for-flight"
     },
     {
       "section": "Science & technology",
@@ -1527,7 +1563,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "No more, say the operators of BESIII. In 2011 a new particle, called X(2370), showed up in their detectors. It looked a lot like a glueball, but other interpretations were possible. So the team got to work on ruling them out. They have spent the intervening years analysing over 10bn processes in which X(2370) could play a role. The result—published online in July and presented at ICHEP by Dr Jin—is a complete picture of the new particle’s properties. The team is now convinced it is a glueball. “No other interpretation can explain all these properties simultaneously,” says Dr Jin.",
         "Detecting the glueball—if it has, indeed, been found—is not just a matter of physicists adding a new specimen to their by now extensive collection. Its discovery will provide valuable data to test the theory behind the strong force. That theory, good as it is, contains many mysteries. One is how the strong force generates mass—for gluons have no mass, but glueballs do. On the answering of such questions, the glueball’s discovery could tip the scales."
       ],
-      "id": "058-should-you-stand-at-your-desk"
+      "id": "060-should-you-stand-at-your-desk"
     },
     {
       "section": "Culture",
@@ -1547,11 +1583,11 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "70 A Renoir portrait’s riveting story",
         "70 Cheers to Swedish winemakers",
         "71 Japan’s listening bars go global",
-        "72 Forgotten Founding Fathers ⏩",
+        "Musk has said humans may end up like 72 Forgotten Founding Fathers “pet labradors” for superintelligent robots. ⏩",
         "creating new, improved versions of itself at a pace dog-breeders can only dream of. So whereas people can be confident that dogs will not enslave them—by 2030, pooches will still not know how to use a tin-opener—they cannot be so sure about AI.",
         "Two new books, one by a Nobel-prizewinning economist and one by a Pulitzergarlanded historian, grapple with the question of how AI will shape the future. Neither uses the dog analogy, but both are easier to understand with reference to it.",
         "Jill Lepore, a Harvard historian, focuses on the men who train the dogs. In her telling, AI tycoons are horrible, irresponsible people whose creations may break their leashes and savage humans. In “The Rise and Fall of the Artificial State”, she argues that tech bosses are trying to build “a future in which humans are ruled, and many replaced, by machines owned by corporations”. This, she says, implies “both the desertion of liberal democracy and the destruction of the natural world”.",
-        "She bases her case partly on the moguls’ own words. Sam Altman, the boss of OpenAI, has said it would be “awesome” to replace human presidents with an AI that could “go around and talk to every person on Earth, understand their exact preferences” and “optimise” for all of them. Elon Musk has said humans may end up like “pet labradors” for superintelligent robots.",
+        "She bases her case partly on the moguls’ own words. Sam Altman, the boss of OpenAI, has said it would be “awesome” to replace human presidents with an AI that could “go around and talk to every person on Earth, understand their exact preferences” and “optimise” for all of them. Elon",
         "▸ Mr Altman has suggested that most of Earth’s surface may soon be covered with data centres. Mr Musk wants to solve this problem by putting data centres in space— and blasting millions of people to live on Mars. The tech titans all seem to have escape plans, notes Ms Lepore: “Elon Musk to Mars, Mark Zuckerberg to the metaverse... Jeff Bezos to space, Sam Altman’s brain uploaded to the cloud.” This makes them reckless about the risk of creating dystopia here on Earth, she fears.",
         "She is right that today’s tech bosses are not people you would trust to write the rules for the future of civilisation. But she overestimates the importance of individual billionaires. How AI shapes society will not depend on Mr Musk’s eccentric political views, any more than the effects of cars depended on Henry Ford’s. Rather, it will hinge on the power of the technology itself and the uses to which people put it.",
         "That is a question Daron Acemoglu addresses in “What Happened to Liberal Democracy?”. Mr Acemoglu is among the world’s most-cited economists. He is best known for “Why Nations Fail”, a sweeping economic history arguing that the main factor keeping poor countries poor is predatory institutions. His new work focuses on the present day and the interplay between technology and democracy.",
@@ -1560,7 +1596,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "It is hard to quarrel with this. AI will certainly cause less social turmoil if it complements human labour rather than making it redundant. But Mr Acemoglu leaves unresolved the question of how this is to be accomplished. Ultimately, both books are disappointing. Inadvertently, they illuminate how hard it is to write persuasively about a technology that is changing so fast, and whose future capabilities are so utterly unknown.",
         "Politically, AI has become unpopular. Twice as many Americans are pessimistic about its long-term effects on society as are optimistic, and only 2% think it is developing “too slowly”. But one way or another, this new wolf will be invited into the cave. The countries pioneering AI technology, America and China, are rivals. Neither wants to be the second to develop a superintelligent ally, for fear of ending up like those hapless, dogless Neanderthals."
       ],
-      "id": "059-what-dogs-can-teach-us-about-ai"
+      "id": "061-what-dogs-can-teach-us-about-ai"
     },
     {
       "section": "Culture",
@@ -1578,7 +1614,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "“On the Mark” is crammed with fascinating facts. Take the exclamation mark, about which Ms Hazrat wrote a previous book. Invented by an Italian poet in the 1360s to signal “admiration and wonder”, by the 19th century it had become a sign of emotion and even hysteria. Editors added them to old texts, including Shakespeare’s “Antony and Cleopatra”. (In the First Folio, the play had only 16 exclamation marks, but modern versions contain about 200, most of them clustered in Cleopatra’s shouty-sounding speeches.) In the 20th century the exclamation mark fell into “soundless cymbal-crashing”, as Theodor Adorno, a German philosopher, put it. Nazi propagandists aggressively attached clusters of them to the end of assertions!!!",
         "Writers have long squabbled over scribbles. Emily Dickinson felt “defeated” when an editor cut a dash; Charles Baudelaire told his proofreader “I absolutely want to keep this comma.” Mark Twain even threatened to have a proofreader shot who dared change his punctuation. This is a delightful tale of marks’ evolution, even if Ms Hazrat’s own attempts to use them inventively fall a dash flat."
       ],
-      "id": "060-to-the-point"
+      "id": "062-to-the-point"
     },
     {
       "section": "Culture",
@@ -1596,7 +1632,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Suffering from severe arthritis and unable to walk without help, she was arrested by the Nazis, who sent her to Auschwitz, where she was probably murdered on arrival, if she had survived the 55-hour train journey. Ms Ostler focuses on the many betrayals that facilitated this fate. The Cahen d’Anvers had fought in the first world war and been generous patrons of France, including donating their chateau to the state. And yet the country turned on them.",
         "Ms Ostler came upon the Cahen d’Anvers while reading “The Hare with Amber Eyes”, which masterfully traces art through time (the author, Edmund de Waal, inherited sculptures bought by Ephrussi). She has doggedly dug up clips and correspondence that evoke the Belle Époque. Sometimes, though, “The Renoir Girls” gets too bogged down in social minutiae that must have preoccupied the Cahen d’Anvers. Few really want to know which Rothschilds were at weddings, what colour the bridesmaids wore and whether the press preferred Louise’s previous hairstyle. But the broader themes—about the hidden history of objects, and what art captures and obscures—are heart-rending and memorable. You will not look at another 19th-century portrait the same way again."
       ],
-      "id": "061-get-the-picture"
+      "id": "063-get-the-picture"
     },
     {
       "section": "Culture",
@@ -1615,7 +1651,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "The second reason is that listening bars and ongaku kissa offer an appealing alternative to nightclubs, which are in decline. These bars provide a relaxed, stylish environment for retired ravers and youngsters alike. Here, enjoying music need not mean enduring punishing opening hours (and punishing hangovers).",
         "The third reason is that these bars offer a distinctive, curated experience to suit a wide variety of tastes. Jim Hanmer, the cofounder of Jazu, another listening bar in London, made a pilgrimage to Japan to visit several jazz kissa. (“Jazu” is a nod to the Japanese pronunciation of “jazz”.) He was drawn to the venues that reflected the owner’s lifelong passion. In these places, “you could listen to a record that you’ve heard 30 times before, but because you’re in this unique environment, it sounds totally different.” At a listening bar, even an old track can find a new groove."
       ],
-      "id": "062-for-the-record"
+      "id": "064-for-the-record"
     },
     {
       "section": "Culture",
@@ -1642,7 +1678,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "Why, then, is he not better known? First, because he was a creature of the law, not a politician. And second, alas, his roads to fortune and virtue diverged. Addicted to land speculation, he ended up in a debtors’ prison in New Jersey while a justice. Then, to escape his creditors, he fled to North Carolina, where he died of malaria in 1798.",
         "Were Wilson and Lennox failures because their ideals did not carry the day? That is a crabbed view of reform. Battles for social progress are rarely won in fighters’ lifetimes. Martin Luther King did not live to see a racially equal society; he was not wrong to fight for one. In their efforts to expand the franchise and their faith in democracy, Lennox and Wilson were both ahead of their time—and their stories are a welcome rediscovery today."
       ],
-      "id": "063-finding-founding-fathers"
+      "id": "065-finding-founding-fathers"
     },
     {
       "section": "Obituary",
@@ -1662,7 +1698,7 @@ window.ISSUES["the-economist-uk-22-august-2026"] = {
         "She still had more to do. She preserved his papers and first drafts, most of which went to Yale, and lectured about him all over North America. Occasionally she unveiled long-resisted plaques to him. Most important, she had to keep up the re-evaluation. After her marriage in 1946 to a Russian-Italian minor nobleman, Boris de Rachewiltz, they bought Brunnenberg, a crag-bound castle in her beloved South Tyrol. It was a ruin when they found it, but over the years she turned it into a centre of Pound studies. Scholars from the world over came to discuss him amid the splendour of the Alps. She firmly told them, when they arrived, that they could say anything they liked about Pound. And then she would tell them what he really thought, and why.",
         "Babbo himself had stayed there after his release from the asylum, hoping for peace in which to write “Paradise”, intended as the final Canto (with a nod to Dante). But he found the place too cold, and retreated again to Venice with Olga. Mary stayed, because South Tyrol was home. After her idyllic childhood in Gais, she had returned again and again to see Mamme and Tatte. Mamme, with her emotional, fearful Catholic heart and overflowing kitchen, offered true mother-love. But there could be only one father. “I have tried to write Paradise”, he declared, in his “Notes for Canto CXX”: “... let those I love try to forgive/ what I have made.”"
       ],
-      "id": "064-mary-de-rachewiltz"
+      "id": "066-mary-de-rachewiltz"
     }
   ]
 };
