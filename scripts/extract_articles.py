@@ -177,7 +177,15 @@ def order_page_blocks(dict_blocks, simple_blocks, skip_indices):
         bbox = db["bbox"]
         if bbox[2] - bbox[0] < 5 and bbox[3] - bbox[1] < 5:
             continue  # tiny corner marker
-        items.append({"db": db, "sb": sb, "x0": bbox[0], "y0": bbox[1], "banner": is_banner_block(db)})
+        y0 = bbox[1]
+        max_size, _ = block_size_stats(db)
+        if len(text) <= 2 and max_size >= TITLE_SIZE_MIN:
+            # A dropped-cap opening letter: PyMuPDF sometimes reports its
+            # bbox starting a fraction of a point *below* the paragraph it
+            # belongs to (font-metrics quirk), which would otherwise sort
+            # the paragraph ahead of its own first letter.
+            y0 -= 5.0
+        items.append({"db": db, "sb": sb, "x0": bbox[0], "y0": y0, "banner": is_banner_block(db)})
 
     items.sort(key=lambda it: it["y0"])
 
@@ -244,6 +252,7 @@ def extract(pdf_path: Path):
     stopped = False
     current_section = ""
     current = None
+    pending_dropcap = ""
     articles = []
 
     for pno in range(doc.page_count):
@@ -304,6 +313,7 @@ def extract(pdf_path: Path):
                 if finished:
                     articles.append(finished)
                 current = new_article(current_section, page_num_printed)
+                pending_dropcap = ""
                 title_parts, dek_parts = [], []
                 for line in db["lines"]:
                     line_text = dehyphenate_join(
@@ -327,9 +337,18 @@ def extract(pdf_path: Path):
 
             if current is None:
                 continue
-            if max_size < BODY_SIZE_MIN or len(norm_clean) <= 2:
+            if max_size < BODY_SIZE_MIN:
                 continue
-            current["paragraphs"].append(fix_glued_words(norm_clean))
+            if len(norm_clean) <= 2:
+                # A dropped-cap opening letter (its own oversized block) —
+                # stash it and glue it onto the very next paragraph instead
+                # of discarding it, so "MOST PEOPLE..." doesn't lose its "M".
+                if max_size >= TITLE_SIZE_MIN:
+                    pending_dropcap += norm_clean
+                continue
+            text = pending_dropcap + norm_clean
+            pending_dropcap = ""
+            current["paragraphs"].append(fix_glued_words(text))
             current["pageEnd"] = page_num_printed
 
     finished = finalize_article(current) if current else None
