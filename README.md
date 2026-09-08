@@ -27,3 +27,6 @@ The article-splitting is heuristic (font-size based, since these PDFs have
 no embedded table of contents), so an occasional title/section may be a
 little off — tweak the constants near the top of
 `scripts/extract_articles.py` and re-run if you spot something worth fixing.
+
+See [`DEVELOPMENT.md`](DEVELOPMENT.md) for the design notes, the full
+debugging history behind each fix, and known remaining issues.
