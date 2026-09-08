@@ -53,6 +53,9 @@ BODY_SIZE_MIN = 7.0
 # genuinely different columns together.
 COLUMN_GAP = 90.0
 
+# The Economist's own "end of article" tombstone glyph.
+END_MARK = "■"
+
 # Economist named columns: their byline sometimes lands in its own text
 # block (falsely triggering a new "article"), and sometimes shares a block
 # with the real headline (leaving it stuck as an ugly prefix). Handle both.
@@ -348,8 +351,20 @@ def extract(pdf_path: Path):
                 continue
             text = pending_dropcap + norm_clean
             pending_dropcap = ""
+            ends_article = text.rstrip().endswith(END_MARK)
+            if ends_article:
+                text = text.rstrip()[: -len(END_MARK)].rstrip()
             current["paragraphs"].append(fix_glued_words(text))
             current["pageEnd"] = page_num_printed
+            if ends_article:
+                # The Economist prints a "■" tombstone at the true end of
+                # many articles (mostly Leaders/columns). Treat it as a hard
+                # boundary: finalize now, so no further body text before the
+                # next title gets glued onto this now-finished article.
+                finished = finalize_article(current)
+                if finished:
+                    articles.append(finished)
+                current = None
 
     finished = finalize_article(current) if current else None
     if finished:
