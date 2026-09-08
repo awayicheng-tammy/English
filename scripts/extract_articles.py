@@ -47,7 +47,11 @@ TITLE_SIZE_MIN = 14.0
 MIN_TITLE_CHARS = 4  # guards against a stray oversized drop-cap character
                       # (1-2 chars) falsely triggering a new article
 BODY_SIZE_MIN = 7.0
-COLUMN_GAP = 30.0
+# Real inter-column gaps on these pages start around 129pt (4-column grid);
+# a same-column indented aside can sit ~64pt off its column's left edge. 90
+# sits between the two, so indents fold into their column without merging
+# genuinely different columns together.
+COLUMN_GAP = 90.0
 
 # Economist named columns: their byline sometimes lands in its own text
 # block (falsely triggering a new "article"), and sometimes shares a block
@@ -121,6 +125,24 @@ def block_spans(dict_block):
     return spans
 
 
+def block_size_stats(dict_block):
+    spans = block_spans(dict_block)
+    if not spans:
+        return 0.0, 0
+    max_size = max(s["size"] for s in spans)
+    large_chars = sum(len(s["text"]) for s in spans if s["size"] >= TITLE_SIZE_MIN)
+    return max_size, large_chars
+
+
+def is_banner_block(dict_block):
+    """A title / dek / section-label block. These often sit at an x0 that
+    doesn't line up with any body column (headlines are frequently centred
+    or span multiple columns), so they must be kept out of the column
+    clustering below and placed purely by reading (y0) order instead."""
+    max_size, large_chars = block_size_stats(dict_block)
+    return max_size >= TITLE_SIZE_MIN and large_chars >= MIN_TITLE_CHARS
+
+
 def classify_header(dict_blocks, simple_blocks):
     """Return (header_index, section_from_header) for the running header
     block at the top of the page, or (None, None) if not found."""
@@ -136,7 +158,15 @@ def classify_header(dict_blocks, simple_blocks):
     return None, None
 
 
-def column_sort(dict_blocks, simple_blocks, skip_indices):
+def order_page_blocks(dict_blocks, simple_blocks, skip_indices):
+    """Reading order for one page: banners (titles/deks/section labels)
+    keep their natural top-to-bottom position, while runs of ordinary body
+    blocks between banners are sorted left-column-then-right-column. Mixing
+    banners into the column clustering itself misplaces them (a headline's
+    x0 rarely lines up with a body column) and pushes them to the end of
+    whichever column they land in — which then wrongly attaches that
+    column's body text to the *previous* article. See scripts README notes
+    in extract_articles.py module docstring."""
     items = []
     for i, (db, sb) in enumerate(zip(dict_blocks, simple_blocks)):
         if i in skip_indices:
@@ -147,23 +177,45 @@ def column_sort(dict_blocks, simple_blocks, skip_indices):
         bbox = db["bbox"]
         if bbox[2] - bbox[0] < 5 and bbox[3] - bbox[1] < 5:
             continue  # tiny corner marker
-        items.append((db, sb, bbox[0], bbox[1]))
+        items.append({"db": db, "sb": sb, "x0": bbox[0], "y0": bbox[1], "banner": is_banner_block(db)})
 
-    xs = sorted({round(x0) for _, _, x0, _ in items})
+    items.sort(key=lambda it: it["y0"])
+
+    body_xs = sorted({round(it["x0"]) for it in items if not it["banner"]})
     columns = []
-    for x in xs:
+    for x in body_xs:
         if not columns or x - columns[-1][-1] > COLUMN_GAP:
             columns.append([x])
         else:
             columns[-1].append(x)
     col_start = {x: idx for idx, group in enumerate(columns) for x in group}
 
-    def sort_key(item):
-        _, _, x0, y0 = item
-        return (col_start[round(x0)], y0)
+    def column_of(x0):
+        r = round(x0)
+        if r in col_start:
+            return col_start[r]
+        if not col_start:
+            return 0
+        nearest = min(col_start, key=lambda k: abs(k - r))
+        return col_start[nearest]
 
-    items.sort(key=sort_key)
-    return [(db, sb) for db, sb, _, _ in items]
+    result = []
+    segment = []
+
+    def flush():
+        segment.sort(key=lambda it: (column_of(it["x0"]), it["y0"]))
+        result.extend(segment)
+        segment.clear()
+
+    for it in items:
+        if it["banner"]:
+            flush()
+            result.append(it)
+        else:
+            segment.append(it)
+    flush()
+
+    return [(it["db"], it["sb"]) for it in result]
 
 
 def new_article(section, page_num):
@@ -208,7 +260,7 @@ def extract(pdf_path: Path):
             current_section = header_section
 
         skip = {header_idx} if header_idx is not None else set()
-        ordered = column_sort(dict_blocks, simple_blocks, skip)
+        ordered = order_page_blocks(dict_blocks, simple_blocks, skip)
 
         page_num_printed = pno + 1
         if header_idx is not None:
@@ -240,20 +292,14 @@ def extract(pdf_path: Path):
             if norm_clean.lower() in KNOWN_COLUMNS:
                 continue  # standalone column byline (e.g. "Bagehot"), not an article
 
-            max_size = max(s["size"] for s in spans)
+            max_size, _ = block_size_stats(db)
 
             section_match = _SECTION_LOOKUP.get(norm_clean.lower())
             if section_match and max_size >= 15:
                 current_section = section_match
                 continue
 
-            large_chars = sum(
-                len(s["text"])
-                for line in db["lines"]
-                for s in line["spans"]
-                if s["size"] >= TITLE_SIZE_MIN
-            )
-            if max_size >= TITLE_SIZE_MIN and len(norm_clean) > 3 and large_chars >= MIN_TITLE_CHARS:
+            if is_banner_block(db) and len(norm_clean) > 3:
                 finished = finalize_article(current) if current else None
                 if finished:
                     articles.append(finished)

@@ -14,8 +14,14 @@ extension like Kimi to look up words while you read.
    python3 scripts/extract_articles.py "PDF/The_Economist_UK_-_22_August_2026.pdf"
    ```
    This writes `reader/data/<issue-slug>.js` and updates `reader/data/manifest.js`.
-3. Open `reader/index.html` directly in Chrome (just double-click it) —
+3. Commit and push. `.github/workflows/pages.yml` republishes `reader/` to
+   GitHub Pages on every push (one-time setup: in the repo's Settings →
+   Pages, set Source to "GitHub Actions"). Open the Pages URL in Chrome —
    pick an issue, browse its contents by section, click into an article.
+   (Opening `reader/index.html` straight from disk also works, but Chrome
+   blocks browser extensions — like a translation/lookup helper — from
+   running on `file://` pages by default, so the Pages URL is the one to
+   actually read from.)
 
 The article-splitting is heuristic (font-size based, since these PDFs have
 no embedded table of contents), so an occasional title/section may be a
