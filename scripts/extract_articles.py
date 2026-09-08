@@ -37,11 +37,12 @@ KNOWN_SECTIONS = [
 ]
 _SECTION_LOOKUP = {}
 
-HEADER_RE = re.compile(
-    r"^(?P<pre>.*?)"
-    r"(?P<num>\d{1,3})\s*The Economist\s+\w+\s+\d{1,2}(st|nd|rd|th)\s+\d{4}"
-    r"(?P<post>.*)$"
+HEADER_DATE_RE = re.compile(
+    r"The Economist\s+\w+\s+\d{1,2}(?:st|nd|rd|th)\s+\d{4}"
 )
+# The printed page number as an isolated 1-3 digit run (never part of the
+# 4-digit year).
+HEADER_PAGENUM_RE = re.compile(r"(?<!\d)\d{1,3}(?!\d)")
 
 TITLE_SIZE_MIN = 14.0
 MIN_TITLE_CHARS = 4  # guards against a stray oversized drop-cap character
@@ -120,6 +121,56 @@ def dehyphenate_join(text: str) -> str:
     return normalize(out)
 
 
+def assign_words_to_blocks(dict_blocks, all_words, pad=1.5):
+    """Assign each word from page.get_text("words") to exactly one dict
+    block, by spatial containment, rather than matching blocks up with a
+    block index from a different PyMuPDF extraction call. get_text("dict")
+    and get_text("blocks")/get_text("words") each run their own
+    block-merging heuristic and can disagree on how many blocks a page has —
+    cross-referencing them by index is fragile and can silently drop whole
+    blocks (and therefore whole articles) when the counts don't match.
+    Bounding-box coordinates, unlike block indices, are consistent across all
+    of these calls, so matching by geometry instead is robust regardless of
+    how each mode segments blocks.
+
+    A drop-cap's block often overlaps the top of the paragraph block that
+    follows it, so a word can fall inside more than one block's (padded)
+    box; picking the smallest-area match keeps it out of the much bigger
+    paragraph block and avoids double-counting it in both."""
+    boxes = [b["bbox"] for b in dict_blocks]
+    assigned = [[] for _ in dict_blocks]
+    for w in all_words:
+        cx, cy = (w[0] + w[2]) / 2, (w[1] + w[3]) / 2
+        best_idx, best_area = None, None
+        for i, (x0, y0, x1, y1) in enumerate(boxes):
+            if x0 - pad <= cx <= x1 + pad and y0 - pad <= cy <= y1 + pad:
+                area = (x1 - x0) * (y1 - y0)
+                if best_area is None or area < best_area:
+                    best_idx, best_area = i, area
+        if best_idx is not None:
+            assigned[best_idx].append(w)
+    return assigned
+
+
+def words_to_text(words):
+    if not words:
+        return ""
+    words = sorted(words, key=lambda w: (w[1], w[0]))
+    lines = [[words[0]]]
+    line_y = words[0][1]
+    for w in words[1:]:
+        if abs(w[1] - line_y) <= 3.0:
+            lines[-1].append(w)
+        else:
+            lines.append([w])
+            line_y = w[1]
+    line_texts = []
+    for line in lines:
+        line.sort(key=lambda w: w[0])
+        line_texts.append(" ".join(w[4] for w in line))
+    return "\n".join(line_texts)
+
+
 def block_spans(dict_block):
     spans = []
     for line in dict_block["lines"]:
@@ -146,22 +197,34 @@ def is_banner_block(dict_block):
     return max_size >= TITLE_SIZE_MIN and large_chars >= MIN_TITLE_CHARS
 
 
-def classify_header(dict_blocks, simple_blocks):
-    """Return (header_index, section_from_header) for the running header
-    block at the top of the page, or (None, None) if not found."""
-    for i, (db, sb) in enumerate(zip(dict_blocks, simple_blocks)):
+def classify_header(dict_blocks, block_texts):
+    """Return (header_index, section_from_header, page_num) for the running
+    header block at the top of the page, or (None, None, None) if not found.
+
+    The header reads "<page><Section>The Economist <date>" on some pages and
+    "The Economist <date><Section><page>" on others (the section/page number
+    sit on whichever side is the page's outer margin) — word-order isn't
+    fixed, so the date phrase and the page number are found independently
+    rather than assuming one fixed left-to-right layout."""
+    for i, (db, text) in enumerate(zip(dict_blocks, block_texts)):
         if db["bbox"][1] > 40:
             continue
-        text = normalize(sb[4])
-        m = HEADER_RE.match(text)
-        if m:
-            leftover = normalize(m.group("pre") + " " + m.group("post"))
-            section = _SECTION_LOOKUP.get(leftover.lower())
-            return i, section
-    return None, None
+        norm_text = normalize(text)
+        date_m = HEADER_DATE_RE.search(norm_text)
+        if not date_m:
+            continue
+        remainder = norm_text[: date_m.start()] + " " + norm_text[date_m.end() :]
+        num_m = HEADER_PAGENUM_RE.search(remainder)
+        page_num = int(num_m.group()) if num_m else None
+        leftover = remainder
+        if num_m:
+            leftover = remainder[: num_m.start()] + " " + remainder[num_m.end() :]
+        section = _SECTION_LOOKUP.get(normalize(leftover).lower())
+        return i, section, page_num
+    return None, None, None
 
 
-def order_page_blocks(dict_blocks, simple_blocks, skip_indices):
+def order_page_blocks(dict_blocks, block_texts, skip_indices):
     """Reading order for one page: banners (titles/deks/section labels)
     keep their natural top-to-bottom position, while runs of ordinary body
     blocks between banners are sorted left-column-then-right-column. Mixing
@@ -171,10 +234,10 @@ def order_page_blocks(dict_blocks, simple_blocks, skip_indices):
     column's body text to the *previous* article. See scripts README notes
     in extract_articles.py module docstring."""
     items = []
-    for i, (db, sb) in enumerate(zip(dict_blocks, simple_blocks)):
+    for i, (db, text) in enumerate(zip(dict_blocks, block_texts)):
         if i in skip_indices:
             continue
-        text = sb[4].strip()
+        text = text.strip()
         if not text:
             continue
         bbox = db["bbox"]
@@ -188,7 +251,7 @@ def order_page_blocks(dict_blocks, simple_blocks, skip_indices):
             # belongs to (font-metrics quirk), which would otherwise sort
             # the paragraph ahead of its own first letter.
             y0 -= 5.0
-        items.append({"db": db, "sb": sb, "x0": bbox[0], "y0": y0, "banner": is_banner_block(db)})
+        items.append({"db": db, "text": text, "x0": bbox[0], "y0": y0, "banner": is_banner_block(db)})
 
     items.sort(key=lambda it: it["y0"])
 
@@ -226,7 +289,7 @@ def order_page_blocks(dict_blocks, simple_blocks, skip_indices):
             segment.append(it)
     flush()
 
-    return [(it["db"], it["sb"]) for it in result]
+    return [(it["db"], it["text"]) for it in result]
 
 
 def new_article(section, page_num):
@@ -263,28 +326,24 @@ def extract(pdf_path: Path):
             break
         page = doc[pno]
         dict_blocks = [b for b in page.get_text("dict")["blocks"] if b["type"] == 0]
-        simple_blocks = [b for b in page.get_text("blocks") if b[6] == 0]
-        if len(dict_blocks) != len(simple_blocks):
-            continue  # extraction mismatch on this page, skip it defensively
+        all_words = page.get_text("words")
+        assigned_words = assign_words_to_blocks(dict_blocks, all_words)
+        block_texts = [words_to_text(ws) for ws in assigned_words]
 
-        header_idx, header_section = classify_header(dict_blocks, simple_blocks)
+        header_idx, header_section, header_page_num = classify_header(dict_blocks, block_texts)
         if header_section:
             current_section = header_section
 
         skip = {header_idx} if header_idx is not None else set()
-        ordered = order_page_blocks(dict_blocks, simple_blocks, skip)
+        ordered = order_page_blocks(dict_blocks, block_texts, skip)
 
-        page_num_printed = pno + 1
-        if header_idx is not None:
-            m = HEADER_RE.match(normalize(simple_blocks[header_idx][4]))
-            if m:
-                page_num_printed = int(m.group("num"))
+        page_num_printed = header_page_num if header_page_num is not None else pno + 1
 
-        for db, sb in ordered:
+        for db, block_text in ordered:
             spans = block_spans(db)
             if not spans:
                 continue
-            raw_text = sb[4].strip()
+            raw_text = block_text.strip()
             clean_text = dehyphenate_join(raw_text)
             if not clean_text:
                 continue
