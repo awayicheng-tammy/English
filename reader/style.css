@@ -1,0 +1,217 @@
+:root {
+  --bg: #fbfaf7;
+  --panel: #ffffff;
+  --text: #1c1c1c;
+  --muted: #6b6b6b;
+  --border: #e4e0d8;
+  --accent: #b5121b; /* Economist-ish red, used sparingly */
+  --max-width: 700px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", "Noto Serif", serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+header.top-bar {
+  position: sticky;
+  top: 0;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  z-index: 10;
+}
+
+header.top-bar .brand {
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+header.top-bar .crumbs {
+  color: var(--muted);
+  font-size: 0.9em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+header.top-bar .crumbs a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header.top-bar .crumbs a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 20px 80px;
+}
+
+/* ---- Issue list (home) ---- */
+.issue-card {
+  display: block;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.issue-card:hover {
+  border-color: var(--accent);
+}
+
+.issue-card h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.issue-card p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.9em;
+}
+
+.empty-state {
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* ---- Section / article list ---- */
+.section-group {
+  margin-bottom: 28px;
+}
+
+.section-group h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 6px;
+  margin: 0 0 10px;
+}
+
+.article-row {
+  display: block;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.article-row .title {
+  font-size: 1.08em;
+  font-weight: bold;
+}
+
+.article-row .dek {
+  color: var(--muted);
+  font-size: 0.92em;
+  margin-top: 3px;
+}
+
+/* ---- Article reading view ---- */
+article.reader {
+  font-size: 1.08em;
+}
+
+article.reader .section-label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+article.reader h1 {
+  font-size: 1.9em;
+  line-height: 1.2;
+  margin: 0 0 10px;
+}
+
+article.reader .dek {
+  font-size: 1.15em;
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+article.reader p {
+  margin: 0 0 1.1em;
+}
+
+nav.article-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+}
+
+nav.article-nav a {
+  text-decoration: none;
+  color: var(--text);
+  cursor: pointer;
+  max-width: 45%;
+}
+
+nav.article-nav a:hover {
+  color: var(--accent);
+}
+
+nav.article-nav .prev { text-align: left; }
+nav.article-nav .next { text-align: right; }
+nav.article-nav .placeholder { visibility: hidden; }
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17181a;
+    --panel: #1f2023;
+    --text: #e8e6e1;
+    --muted: #9a9890;
+    --border: #33342f;
+    --accent: #e0555c;
+  }
+}

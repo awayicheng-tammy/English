@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Economist Reader</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top-bar">
+  <span class="brand" id="brand">📰 Economist Reader</span>
+  <span class="crumbs" id="crumbs"></span>
+</header>
+<main id="app-main"></main>
+
+<script src="data/manifest.js"></script>
+<script>
+  (window.ISSUE_MANIFEST || []).forEach(function (issue) {
+    document.write('<script src="data/' + issue.slug + '.js"><\/script>');
+  });
+</script>
+<script src="app.js"></script>
+</body>
+</html>
