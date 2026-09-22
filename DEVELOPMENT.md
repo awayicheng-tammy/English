@@ -116,6 +116,12 @@ PDF 没有内嵌书签/大纲（`doc.get_toc()` 是空的），所以文章切�
 - `requirements.txt` 新增 `wordfreq` 依赖（纯 Python、自带词频数据、不用联网）。
 - PR #7。
 
+### 2026-09-22 修复七：新一期杂志没显示在网站上（分支搞错）
+- **触发**：用户在本地新分解了一期 PDF（8 August 2026），生成了对应的数据文件，但网站上没看到新杂志。
+- **根因**：新文件被直接 commit/push 到了 `main` 分支，而不是 `claude/economist-pdf-web-reader-zn8j39`。Pages 部署工作流只在 push 到后者、且改动路径含 `reader/**` 时才会触发，所以这次改动虽然进了 `main`，但从来没有触发过重新部署。
+- 用户选择自己在 GitHub 上手动处理了这次的分支问题，没有让我去 cherry-pick。
+- **后续动作**：把"新增一期杂志"的完整步骤写进了 README.md（见该文件"Adding a new issue, step by step"一节），明确标出第 2 步必须先切到开发分支、第 6 步必须 push 到开发分支而不是 main，避免以后再犯同样的错误。
+
 ## 工作流约定
 
 - 每次修复后 `git commit` + `git push` 到分支 `claude/economist-pdf-web-reader-zn8j39`。
