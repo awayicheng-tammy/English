@@ -14,5 +14,9 @@ window.ISSUE_MANIFEST = [
   {
     "slug": "the-economist-europe-29-august-2026",
     "title": "The Economist Europe - 29 August 2026"
+  },
+  {
+    "slug": "the-economist-europe-12-september-2026",
+    "title": "The Economist Europe - 12 September 2026"
   }
 ];
