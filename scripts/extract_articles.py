@@ -58,6 +58,14 @@ COLUMN_GAP = 90.0
 # The Economist's own "end of article" tombstone glyph.
 END_MARK = "■"
 
+# When an article jumps to a non-adjacent page (something else is printed in
+# between), the page it jumps *from* ends with this glyph...
+JUMP_MARK = "⏩"
+# ...and the page it resumes on opens with this one, right on the first
+# word of the continuing paragraph. Neither marks a real article boundary —
+# END_MARK still does that — they're just navigation aids to strip.
+RESUME_MARK = "▸"
+
 # Economist named columns: their byline sometimes lands in its own text
 # block (falsely triggering a new "article"), and sometimes shares a block
 # with the real headline (leaving it stuck as an ugly prefix). Handle both.
@@ -171,19 +179,50 @@ def assign_words_to_blocks(dict_blocks, all_words, pad=1.5):
     A drop-cap's block often overlaps the top of the paragraph block that
     follows it, so a word can fall inside more than one block's (padded)
     box; picking the smallest-area match keeps it out of the much bigger
-    paragraph block and avoids double-counting it in both."""
+    paragraph block and avoids double-counting it in both.
+
+    That block-level area test breaks down for a block whose own bbox is
+    unnaturally wide and mostly empty — e.g. the "Also in this section" box's
+    last line, which pairs a short label on the left with a "continues"
+    glyph far off to the right, so PyMuPDF's own bbox for it stretches across
+    the full page width even though hardly any of that width has real
+    content. Nothing in the block's own text needs the middle of that span,
+    but the box's small *area* (it's a short single line) can still beat a
+    genuine paragraph block that happens to occupy the same space, stealing
+    that paragraph's words. So: only fall back to the smallest-bbox-area
+    tie-break when a word's centre matches more than one block; when it
+    does, prefer whichever candidate has an actual *span* (not just a block)
+    whose tight bbox contains the point — spans hug the real glyphs, so this
+    catches the sparse-wide-block case that a block-level check misses."""
     boxes = [b["bbox"] for b in dict_blocks]
     assigned = [[] for _ in dict_blocks]
     for w in all_words:
         cx, cy = (w[0] + w[2]) / 2, (w[1] + w[3]) / 2
+        candidates = [
+            i
+            for i, (x0, y0, x1, y1) in enumerate(boxes)
+            if x0 - pad <= cx <= x1 + pad and y0 - pad <= cy <= y1 + pad
+        ]
+        if not candidates:
+            continue
+        if len(candidates) == 1:
+            assigned[candidates[0]].append(w)
+            continue
         best_idx, best_area = None, None
-        for i, (x0, y0, x1, y1) in enumerate(boxes):
-            if x0 - pad <= cx <= x1 + pad and y0 - pad <= cy <= y1 + pad:
-                area = (x1 - x0) * (y1 - y0)
-                if best_area is None or area < best_area:
-                    best_idx, best_area = i, area
-        if best_idx is not None:
-            assigned[best_idx].append(w)
+        for i in candidates:
+            for line in dict_blocks[i]["lines"]:
+                for span in line["spans"]:
+                    sx0, sy0, sx1, sy1 = span["bbox"]
+                    if sx0 - pad <= cx <= sx1 + pad and sy0 - pad <= cy <= sy1 + pad:
+                        area = (sx1 - sx0) * (sy1 - sy0)
+                        if best_area is None or area < best_area:
+                            best_idx, best_area = i, area
+        if best_idx is None:
+            best_idx = min(
+                candidates,
+                key=lambda i: (boxes[i][2] - boxes[i][0]) * (boxes[i][3] - boxes[i][1]),
+            )
+        assigned[best_idx].append(w)
     return assigned
 
 
@@ -221,6 +260,34 @@ def block_size_stats(dict_block):
     max_size = max(s["size"] for s in spans)
     large_chars = sum(len(s["text"]) for s in spans if s["size"] >= TITLE_SIZE_MIN)
     return max_size, large_chars
+
+
+SECTION_TOC_HEADING_RE = re.compile(r"^also in this section", re.I)
+# Most lines reference a page number ("22 Bagehot: ..."); an item with
+# nothing else to cross-reference on the same page instead opens on a bare
+# em dash ("— The Telegram is away").
+SECTION_TOC_LINE_RE = re.compile(r"^(?:\d{1,3}\b|—)")
+
+
+def is_section_toc_line(dict_block, norm_text):
+    """The "Also in this section" box on a section's opening page lists that
+    section's other articles by page number, off to the side of the lead
+    article's own columns. Its lines are body-text sized, so size alone
+    can't rule them out — but unlike every other piece of running text on
+    the page (always a Serif family), this box is set almost entirely in
+    the Sans family, which is a reliable tell. Restricting to lines that
+    also start with a 1-3 digit page number, an em dash, or are the box's
+    own heading keeps this from ever matching a real paragraph, which never
+    opens on a bare number or dash."""
+    spans = block_spans(dict_block)
+    total_chars = sum(len(s["text"]) for s in spans)
+    if not total_chars:
+        return False
+    sans_chars = sum(len(s["text"]) for s in spans if "Sans" in s["font"])
+    if sans_chars / total_chars < 0.8:
+        return False
+    heading = norm_text.lstrip("→").strip()
+    return bool(SECTION_TOC_HEADING_RE.match(heading)) or bool(SECTION_TOC_LINE_RE.match(norm_text))
 
 
 def looks_like_dek(dict_block):
@@ -393,6 +460,7 @@ def extract(pdf_path: Path):
             if not spans:
                 continue
             raw_text = block_text.strip()
+            raw_text = raw_text.replace(RESUME_MARK, "").replace(JUMP_MARK, "").strip()
             clean_text = dehyphenate_join(raw_text)
             if not clean_text:
                 continue
@@ -411,6 +479,9 @@ def extract(pdf_path: Path):
 
             if norm_clean.lower() in KNOWN_COLUMNS:
                 continue  # standalone column byline (e.g. "Bagehot"), not an article
+
+            if is_section_toc_line(db, norm_clean):
+                continue  # "Also in this section" box line, not article body
 
             max_size, _ = block_size_stats(db)
 
